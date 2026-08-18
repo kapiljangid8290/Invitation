@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { COUPLE, EVENTS, FAMILIES, VENUE } from "./data/wedding";
 
 const WEDDING_DATE = new Date(COUPLE.weddingDate);
+type EventId = (typeof EVENTS)[number]["id"];
 
 function Countdown() {
   const [remaining, setRemaining] = useState<number | null>(null);
@@ -32,6 +33,43 @@ function Countdown() {
           <span>{label}</span>
         </div>
       ))}
+    </div>
+  );
+}
+
+function EnvelopeIntro({ isOpening, onOpen }: { isOpening: boolean; onOpen: () => void }) {
+  useEffect(() => {
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, []);
+
+  return (
+    <div className={`envelopeIntro${isOpening ? " isOpening" : ""}`} role="dialog" aria-modal="true" aria-label="Wedding invitation welcome">
+      <div className="envelopeSparkles" aria-hidden="true">
+        {Array.from({ length: 10 }, (_, index) => (
+          <i key={index} />
+        ))}
+      </div>
+      <div className="envelopeContent">
+        <p className="envelopeEyebrow">A celebration awaits</p>
+        <button className="envelopeButton" type="button" onClick={onOpen} disabled={isOpening} aria-label="Open Kapil and Somya's wedding invitation">
+          <span className="envelope" aria-hidden="true">
+            <span className="envelopeLetter">
+              <span className="envelopeMonogram">K &amp; S</span>
+              <span className="envelopeLetterText">Wedding Invitation</span>
+            </span>
+            <span className="envelopeBack" />
+            <span className="envelopeFlap" />
+            <span className="envelopeFront" />
+            <span className="envelopeSeal">✿</span>
+          </span>
+        </button>
+        <p className="envelopePrompt">Tap the envelope to open</p>
+      </div>
     </div>
   );
 }
@@ -126,11 +164,11 @@ function FloralScatter() {
 }
 
 function EventSchedule() {
-  const [activeId, setActiveId] = useState(EVENTS[0].id);
+  const [activeId, setActiveId] = useState<EventId>(EVENTS[0].id);
   const activeEvent = EVENTS.find((event) => event.id === activeId) ?? EVENTS[0];
 
   return (
-    <div className="eventSchedule">
+    <div className={`eventSchedule ${activeEvent.theme}`}>
       <div className="eventTabs" role="tablist" aria-label="Wedding events">
         {EVENTS.map((event) => {
           const selected = event.id === activeId;
@@ -144,7 +182,9 @@ function EventSchedule() {
               aria-selected={selected}
               aria-controls={`panel-${event.id}`}
               className={`eventTab ${event.theme}${selected ? " isActive" : ""}`}
-              onClick={() => setActiveId(event.id)}
+              onClick={() => {
+                setActiveId(event.id);
+              }}
             >
               {event.title}
             </button>
@@ -185,8 +225,24 @@ function EventSchedule() {
 }
 
 export default function Home() {
+  const [isEnvelopeVisible, setIsEnvelopeVisible] = useState(true);
+  const [isEnvelopeOpening, setIsEnvelopeOpening] = useState(false);
+
+  const openInvitation = () => {
+    if (isEnvelopeOpening) return;
+
+    window.scrollTo(0, 0);
+    setIsEnvelopeOpening(true);
+    window.setTimeout(() => {
+      window.scrollTo(0, 0);
+      setIsEnvelopeVisible(false);
+    }, 760);
+  };
+
   return (
-    <main>
+    <>
+      {isEnvelopeVisible ? <EnvelopeIntro isOpening={isEnvelopeOpening} onOpen={openInvitation} /> : null}
+      <main aria-hidden={isEnvelopeVisible}>
       <div className="petals" aria-hidden="true">
         {Array.from({ length: 24 }, (_, index) => (
           <i key={index} />
@@ -274,6 +330,7 @@ export default function Home() {
         <p className="footerVenue">{VENUE.name}, Jodhpur</p>
         {COUPLE.hashtag ? <p className="hashtag">{COUPLE.hashtag}</p> : null}
       </footer>
-    </main>
+      </main>
+    </>
   );
 }

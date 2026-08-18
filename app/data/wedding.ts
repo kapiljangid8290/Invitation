@@ -15,8 +15,8 @@ export const EVENTS = [
     dateLabel: "Tue · 25 November 2026",
     timeLabel: "7:00 PM onwards",
     venueLabel: "Siwanchi Bhawan, Jodhpur",
-    image: "/art/kapil-somya-sangeet.png",
-    alt: "Kapil and Somya dancing together at their Sangeet",
+    image: "/art/kapil-somya-sangeet-illustration.png",
+    alt: "Illustrated portrait of Kapil and Somya at their Sangeet",
     theme: "sangeet",
   },
   {
@@ -26,8 +26,8 @@ export const EVENTS = [
     dateLabel: "Wed · 26 November 2026",
     timeLabel: "From 7:30 PM",
     venueLabel: "Siwanchi Bhawan, Jodhpur",
-    image: "/art/kapil-somya-wedding.png",
-    alt: "Kapil and Somya at their wedding ceremony",
+    image: "/art/kapil-somya-wedding-illustration.png",
+    alt: "Illustrated portrait of Kapil and Somya at their wedding ceremony",
     theme: "wedding",
   },
   {
@@ -37,8 +37,8 @@ export const EVENTS = [
     dateLabel: "Wed · 26 November 2026",
     timeLabel: "From 7:30 PM",
     venueLabel: "Siwanchi Bhawan, Jodhpur",
-    image: "/art/kapil-somya-reception.png",
-    alt: "Kapil and Somya celebrating at their reception",
+    image: "/art/kapil-somya-reception-illustration.png",
+    alt: "Illustrated portrait of Kapil and Somya at their reception",
     theme: "reception",
   },
 ] as const;
