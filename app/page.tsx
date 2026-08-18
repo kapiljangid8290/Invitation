@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { COUPLE, EVENTS, FAMILIES, VENUE } from "./data/wedding";
+import { COUPLE, EVENTS, VENUE } from "./data/wedding";
 
 const WEDDING_DATE = new Date(COUPLE.weddingDate);
 type EventId = (typeof EVENTS)[number]["id"];
@@ -55,20 +55,24 @@ function EnvelopeIntro({ isOpening, onOpen }: { isOpening: boolean; onOpen: () =
         ))}
       </div>
       <div className="envelopeContent">
-        <p className="envelopeEyebrow">A celebration awaits</p>
+        <p className="envelopeEyebrow">An Invitation From The Heart</p>
+        <p className="envelopeNames">Kapil &amp; Somya</p>
         <button className="envelopeButton" type="button" onClick={onOpen} disabled={isOpening} aria-label="Open Kapil and Somya's wedding invitation">
           <span className="envelope" aria-hidden="true">
+            <img className="envelopeBotanical envelopeBotanicalLeft" src="/art/floral-border-top.png" alt="" />
+            <img className="envelopeBotanical envelopeBotanicalRight" src="/art/floral-border-top.png" alt="" />
+            <span className="envelopeLight" />
             <span className="envelopeLetter">
-              <span className="envelopeMonogram">K &amp; S</span>
-              <span className="envelopeLetterText">Wedding Invitation</span>
+              <span className="envelopeMonogram">K + S</span>
+              <span className="envelopeLetterText">Kapil &amp; Somya</span>
             </span>
             <span className="envelopeBack" />
             <span className="envelopeFlap" />
             <span className="envelopeFront" />
             <span className="envelopeSeal">✿</span>
           </span>
+          <span className="envelopeCta">Open Our Invitation</span>
         </button>
-        <p className="envelopePrompt">Tap the envelope to open</p>
       </div>
     </div>
   );
@@ -236,13 +240,13 @@ export default function Home() {
     window.setTimeout(() => {
       window.scrollTo(0, 0);
       setIsEnvelopeVisible(false);
-    }, 760);
+    }, 2100);
   };
 
   return (
     <>
       {isEnvelopeVisible ? <EnvelopeIntro isOpening={isEnvelopeOpening} onOpen={openInvitation} /> : null}
-      <main aria-hidden={isEnvelopeVisible}>
+      <main className={isEnvelopeVisible ? undefined : "invitationOpen"} aria-hidden={isEnvelopeVisible}>
       <div className="petals" aria-hidden="true">
         {Array.from({ length: 24 }, (_, index) => (
           <i key={index} />
@@ -253,19 +257,18 @@ export default function Home() {
 
       <section className="hero">
         <img className="floralFrame" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
-        <span className="ganeshaIcon" aria-hidden="true">
-          ॐ
-        </span>
-        <p className="eyebrow">Together with their families</p>
-        <p className="inviteLine">invite you to celebrate the wedding of</p>
+        <img className="heroBotanicalMotif" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
+        <p className="eyebrow">With the blessings of our families</p>
         <div className="coupleNames">
           <h1>{COUPLE.groom}</h1>
+          <span className="nameDivider" aria-hidden="true" />
           <p className="ampersand">&amp;</p>
+          <span className="nameDivider" aria-hidden="true" />
           <h1>{COUPLE.bride}</h1>
         </div>
-        <div className="heroPortrait">
-          <img src="/art/kapil-somya-hero.png" alt="Illustrated portrait of Kapil and Somya" />
-        </div>
+        <p className="inviteLine">are getting married</p>
+        <p className="heroDate">25 &amp; 26 November 2026</p>
+        <p className="heroLocation">Jodhpur, Rajasthan</p>
         <a className="scrollCue" href="#save-the-date">
           Scroll to celebrate <span>↓</span>
         </a>
@@ -285,15 +288,22 @@ export default function Home() {
         <EventSchedule />
       </RevealSection>
 
-      <RevealSection className="section presence">
-        <FloralScatter />
-        <h2 className="scriptTitle">Awaiting Your Noble Presence</h2>
-        <p className="presenceLine">With love from both families</p>
-        <div className="familiesBlock">
-          <p className="familiesHeading">The Families</p>
-          <p>{FAMILIES.groomSide}</p>
-          <p className="familyAmp">&amp;</p>
-          <p>{FAMILIES.brideSide}</p>
+      <RevealSection className="section invitationMessage" id="invitation">
+        <img className="invitationBotanical invitationBotanicalLeft" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
+        <img className="invitationBotanical invitationBotanicalRight" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
+        <div className="invitationCopy">
+          <h2 className="invitationHeading">Together With Our Families</h2>
+          <p className="invitationParagraph">
+            With hearts full of joy and gratitude, we invite you to celebrate the beginning of our forever.
+          </p>
+          <p className="invitationParagraph invitationParagraphLast">
+            Your presence, blessings and love will make our celebrations even more special.
+          </p>
+          <div className="familyNames" aria-label="The Nahar and Jangid families">
+            <span>Nahar&apos;s</span>
+            <i className="familyOrnament" aria-hidden="true">✦</i>
+            <span>Jangid&apos;s</span>
+          </div>
         </div>
       </RevealSection>
 
