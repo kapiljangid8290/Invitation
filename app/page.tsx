@@ -6,14 +6,17 @@ import { COUPLE, EVENTS, FAMILIES, VENUE } from "./data/wedding";
 const WEDDING_DATE = new Date(COUPLE.weddingDate);
 
 function Countdown() {
-  const [remaining, setRemaining] = useState(WEDDING_DATE.getTime() - Date.now());
+  const [remaining, setRemaining] = useState<number | null>(null);
 
   useEffect(() => {
-    const timer = window.setInterval(() => setRemaining(WEDDING_DATE.getTime() - Date.now()), 1000);
+    const updateCountdown = () => setRemaining(WEDDING_DATE.getTime() - Date.now());
+
+    updateCountdown();
+    const timer = window.setInterval(updateCountdown, 1000);
     return () => window.clearInterval(timer);
   }, []);
 
-  const safeRemaining = Math.max(0, remaining);
+  const safeRemaining = Math.max(0, remaining ?? 0);
   const units = [
     ["Days", Math.floor(safeRemaining / 86_400_000)],
     ["Hours", Math.floor((safeRemaining / 3_600_000) % 24)],

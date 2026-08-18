@@ -104,6 +104,17 @@ h1 {
   position: relative;
 }
 
+.coupleNames {
+  white-space: nowrap;
+  z-index: 1;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(.35rem, 2vw, 1rem);
+  display: flex;
+  position: relative;
+}
+
 .ampersand {
   color: var(--gold);
   z-index: 1;

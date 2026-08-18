@@ -113,6 +113,17 @@ h1 {
   z-index: 1;
 }
 
+.coupleNames {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: clamp(0.35rem, 2vw, 1rem);
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .ampersand {
   color: var(--gold);
   font-family: "Great Vibes", cursive;
