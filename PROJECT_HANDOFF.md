@@ -71,6 +71,14 @@ These are the approved visual references for preserving the couple's likeness in
 
 `C:\Users\kapil\Downloads\file_0000000091988208b9fbf9a5b73cd1db.png` is a polished save-the-date visual reference showing a navy-and-powder-blue formal palette and a floral, fairy-light setting. Its visible text says “26th November”; treat that date as unconfirmed until the couple provides the final invitation details.
 
+Generated project artwork:
+
+- `public/art/kapil-somya-hero.png` — hero / formal garden portrait.
+- `public/art/kapil-somya-sangeet.png` — Sangeet dancing scene.
+- `public/art/kapil-somya-wedding.png` — wedding ceremony portrait.
+- `public/art/kapil-somya-reception.png` — reception celebration portrait.
+- `public/art/floral-border-top.png` — decorative floral header.
+
 ## Reference Recording Behaviours Observed
 
 - Animated floral/petal overlay persists while the visitor scrolls.
@@ -91,8 +99,9 @@ These are the approved visual references for preserving the couple's likeness in
 ### Invitation copy
 
 - Bride and groom full names.
-- Confirmed dates: Sangeet on **25 November 2026**; Wedding and Reception on **26 November 2026**.
-- Exact ceremony, reception, and Sangeet times.
+- Couple names: **Kapil and Somya**.
+- Confirmed schedule: Sangeet on **25 November 2026 at 7:00 PM**; Wedding and Reception on **26 November 2026 from 7:30 PM**.
+- Venue: **Siwanchi Bhawan (Yatrik Bhavan), Jodhpur, Rajasthan** — map embed and directions added.
 - Event list, each date, time, venue, and address.
 - Parent/family names and desired invitation wording.
 - RSVP contact(s), if an RSVP section is wanted.
@@ -119,7 +128,8 @@ These are the approved visual references for preserving the couple's likeness in
 - Reference recording reviewed.
 - Next.js mobile-first foundation created, including a hero, animated falling petals, live countdown, event-card placeholders, venue placeholder, and closing section.
 - Production build passes.
-- Couple photo references registered; awaiting final names, event details, venue/map links, and any additional art-direction preferences before final content and custom illustration assets are created.
+- Couple photo references registered; venue and event artwork added.
+- Remaining: family names, RSVP, background music file (`public/audio/celebration.mp3`), and deployment.
 
 ## Local Development
 

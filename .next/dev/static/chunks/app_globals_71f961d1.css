@@ -25,7 +25,6 @@ body {
 main {
   min-height: 100svh;
   position: relative;
-  overflow: hidden;
 }
 
 .hero, .section, footer {
@@ -40,6 +39,29 @@ main {
   gap: 12px;
   min-height: 100svh;
   display: grid;
+  overflow: hidden;
+}
+
+.floralTop {
+  opacity: .55;
+  pointer-events: none;
+  width: min(100%, 520px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heroArt {
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid #fffc;
+  border-radius: 180px 180px 18px 18px;
+  width: min(78vw, 340px);
+  max-height: 280px;
+  margin: 18px auto 0;
+  display: block;
+  box-shadow: 0 16px 38px #70432e2e;
 }
 
 .hero:before, .hero:after {
@@ -211,8 +233,24 @@ h1 {
   font-size: 3.5rem;
 }
 
-.eventCard p:last-child {
-  margin-bottom: 0;
+.eventWhen {
+  margin: 0 0 6px;
+}
+
+.eventVenue {
+  opacity: .92;
+  margin: 0 0 4px;
+  font-size: .85rem;
+}
+
+.eventCard img {
+  object-fit: cover;
+  object-position: center 32%;
+  border-radius: 12px;
+  width: 100%;
+  max-height: 220px;
+  margin-top: 18px;
+  display: block;
 }
 
 .presence {
@@ -228,10 +266,51 @@ h1 {
   background: #e9f1eb;
 }
 
-.venue p {
+.venueSubtitle {
+  color: var(--gold);
+  margin: -18px 0 12px;
+  font-family: Playfair Display, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.venueAddress {
   max-width: 460px;
-  margin: auto;
+  margin: 0 auto 24px;
   line-height: 1.7;
+}
+
+.mapWrap {
+  border: 3px solid #ffffffd9;
+  border-radius: 16px;
+  max-width: 520px;
+  margin: 0 auto 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px #45242a1f;
+}
+
+.mapWrap iframe {
+  border: 0;
+  width: 100%;
+  height: min(62vw, 320px);
+  display: block;
+}
+
+.directionsBtn {
+  background: var(--wine);
+  color: #fff6ea;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.directionsBtn:hover {
+  background: #6b3144;
 }
 
 footer {
@@ -243,6 +322,43 @@ footer h2 {
   margin: 6px 0;
   font-family: Great Vibes, cursive;
   font-size: clamp(3rem, 12vw, 4.5rem);
+}
+
+.venueNote {
+  opacity: .85;
+  margin-top: 8px;
+  font-size: .85rem;
+}
+
+.musicToggle {
+  color: var(--wine);
+  cursor: pointer;
+  z-index: 10;
+  background: #ffffffeb;
+  border: 1px solid #e3cbb1;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 1.1rem;
+  position: fixed;
+  bottom: 22px;
+  right: 18px;
+  box-shadow: 0 8px 22px #45242a26;
+}
+
+.musicToggle:hover {
+  background: #fff;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity .7s, transform .7s;
+  transform: translateY(28px);
+}
+
+.reveal.isVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .petals {
@@ -396,6 +512,12 @@ footer h2 {
   *, :before, :after {
     scroll-behavior: auto !important;
     animation-duration: .01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transition: none;
+    transform: none;
   }
 }
 
