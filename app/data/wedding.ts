@@ -14,8 +14,8 @@ export const EVENTS = [
     description: "An evening of music, laughter, celebration and togetherness.",
     dateLabel: "Wednesday, 25 November 2026",
     timeLabel: "7:00 PM onwards",
-    image: "/art/kapil-somya-sangeet-illustration.png",
-    alt: "Illustrated portrait of Kapil and Somya celebrating their Sangeet",
+    image: "/art/sangeet-hands.jpg",
+    alt: "Kapil and Somya holding hands before their celebration",
     theme: "sangeetReception",
   },
   {
@@ -24,8 +24,8 @@ export const EVENTS = [
     description: "Join us as we begin our forever surrounded by love and blessings.",
     dateLabel: "Thursday, 26 November 2026",
     timeLabel: "8:00 PM onwards",
-    image: "/art/kapil-somya-wedding-illustration.png",
-    alt: "Illustrated portrait of Kapil and Somya at their wedding ceremony",
+    image: "/art/wedding-temple-portrait.jpg",
+    alt: "Kapil and Somya together beside a temple before their wedding",
     theme: "wedding",
   },
 ] as const;

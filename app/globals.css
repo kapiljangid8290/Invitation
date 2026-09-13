@@ -959,21 +959,30 @@ h1 {
 }
 
 .eventArt {
+  background: rgb(255 250 244 / 0.84);
+  border: 2px solid rgb(255 250 244 / 0.78);
+  border-radius: 28px 10px 28px 10px;
   bottom: -18px;
+  box-shadow: 0 10px 22px rgb(75 39 37 / 0.18);
   height: 176px;
+  overflow: hidden;
   pointer-events: none;
   position: absolute;
   right: -16px;
   transition: transform 0.35s ease-out;
   width: 150px;
+  z-index: 2;
 }
 
 .eventArt img {
   height: 100%;
-  object-fit: contain;
-  object-position: bottom right;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
+
+.eventCard.sangeetReception .eventArt img { object-position: center 54%; }
+.eventCard.wedding .eventArt img { object-position: 63% 86%; }
 
 .eventOrnament {
   border: 1px solid currentColor;

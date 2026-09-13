@@ -1044,19 +1044,33 @@ h1 {
 
 .eventArt {
   pointer-events: none;
+  z-index: 2;
+  background: #fffaf4d6;
+  border: 2px solid #fffaf4c7;
+  border-radius: 28px 10px;
   width: 150px;
   height: 176px;
   transition: transform .35s ease-out;
   position: absolute;
   bottom: -18px;
   right: -16px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px #4b27252e;
 }
 
 .eventArt img {
-  object-fit: contain;
-  object-position: bottom right;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
+}
+
+.eventCard.sangeetReception .eventArt img {
+  object-position: center 54%;
+}
+
+.eventCard.wedding .eventArt img {
+  object-position: 63% 86%;
 }
 
 .eventOrnament {

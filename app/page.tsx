@@ -220,9 +220,9 @@ function EventSchedule() {
             <div className="eventDetails">
               <p><span>Time</span>{event.timeLabel}</p>
             </div>
-            <div className="eventArt" aria-hidden="true">
+            <div className="eventArt">
               <i className="eventOrnament" />
-              <img src={event.image} alt="" />
+              <img src={event.image} alt={event.alt} loading="lazy" />
             </div>
           </div>
         </article>

@@ -27,8 +27,8 @@ const EVENTS = [
         description: "An evening of music, laughter, celebration and togetherness.",
         dateLabel: "Wednesday, 25 November 2026",
         timeLabel: "7:00 PM onwards",
-        image: "/art/kapil-somya-sangeet-illustration.png",
-        alt: "Illustrated portrait of Kapil and Somya celebrating their Sangeet",
+        image: "/art/sangeet-hands.jpg",
+        alt: "Kapil and Somya holding hands before their celebration",
         theme: "sangeetReception"
     },
     {
@@ -37,8 +37,8 @@ const EVENTS = [
         description: "Join us as we begin our forever surrounded by love and blessings.",
         dateLabel: "Thursday, 26 November 2026",
         timeLabel: "8:00 PM onwards",
-        image: "/art/kapil-somya-wedding-illustration.png",
-        alt: "Illustrated portrait of Kapil and Somya at their wedding ceremony",
+        image: "/art/wedding-temple-portrait.jpg",
+        alt: "Kapil and Somya together beside a temple before their wedding",
         theme: "wedding"
     }
 ];
@@ -588,7 +588,6 @@ function EventSchedule() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "eventArt",
-                                "aria-hidden": "true",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                         className: "eventOrnament"
@@ -599,7 +598,8 @@ function EventSchedule() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: event.image,
-                                        alt: ""
+                                        alt: event.alt,
+                                        loading: "lazy"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 225,
