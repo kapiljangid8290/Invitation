@@ -1031,6 +1031,25 @@ h1 {
   transform: translateY(-4px) rotate(-1deg);
 }
 
+@media (max-width: 699px) {
+  .eventCardInner {
+    min-height: 0;
+  }
+
+  .eventArt {
+    aspect-ratio: 4 / 3;
+    bottom: auto;
+    height: auto;
+    margin-top: 22px;
+    position: relative;
+    right: auto;
+    width: 100%;
+  }
+
+  .eventCard.sangeetReception .eventArt img { object-position: center 54%; }
+  .eventCard.wedding .eventArt img { object-position: 62% 86%; }
+}
+
 @keyframes eventCardReveal {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
