@@ -216,6 +216,7 @@ function EventSchedule() {
           <div className="eventCardInner">
             <p className="eventDate">{event.dateLabel}</p>
             <h3>{event.title}</h3>
+            {"themeLabel" in event && <p className="eventTheme">{event.themeLabel}</p>}
             <p className="eventDescription">{event.description}</p>
             <div className="eventDetails">
               <p><span>Time</span>{event.timeLabel}</p>
@@ -225,45 +226,6 @@ function EventSchedule() {
               <img src={event.image} alt={event.alt} loading="lazy" />
             </div>
           </div>
-        </article>
-      ))}
-    </div>
-  );
-}
-
-const STORY_ILLUSTRATIONS = [
-  {
-    title: "Sangeet & Reception",
-    image: "/art/story-sangeet-blue.jpg",
-    alt: "Somya and Kapil dancing together, with Somya in a blue floral dress",
-    theme: "festive",
-  },
-  {
-    title: "The Wedding",
-    image: "/art/story-wedding-seated.jpg",
-    alt: "Somya and Kapil seated together on temple steps",
-    theme: "wedding",
-  },
-  {
-    title: "Forever Begins",
-    image: "/art/story-forever-steps.jpg",
-    alt: "Somya and Kapil walking together down temple steps",
-    theme: "forever",
-  },
-] as const;
-
-function StoryIllustrations() {
-  return (
-    <div className="storyGallery">
-      {STORY_ILLUSTRATIONS.map((story) => (
-        <article className={`storyCard ${story.theme}`} key={story.title}>
-          <div className="storyFloral" aria-hidden="true">
-            <img src="/art/floral-border-top.png" alt="" />
-          </div>
-          <div className="storyArt">
-            <img src={story.image} alt={story.alt} loading="lazy" />
-          </div>
-          <h3>{story.title}</h3>
         </article>
       ))}
     </div>
@@ -311,7 +273,7 @@ export default function Home() {
           <h1>{COUPLE.groom}</h1>
         </div>
         <p className="inviteLine">are getting married</p>
-        <p className="heroDate">25 &amp; 26 November 2026</p>
+        <p className="heroDate">26 November 2026</p>
         <p className="heroLocation">Jodhpur, Rajasthan</p>
         <a className="scrollCue" href="#save-the-date">
           Scroll to celebrate <span>↓</span>
@@ -322,7 +284,7 @@ export default function Home() {
         <FloralScatter />
         <div className="saveDateBanner">
           <p className="saveDateLabel">Save the Date</p>
-          <h2>25 &amp; 26 November 2026</h2>
+          <h2>26 November 2026</h2>
           <div className="countdownDivider" aria-hidden="true"><span /></div>
           <p className="countdownIntro">The celebration begins in</p>
           <div className="countdownBotanicals" aria-hidden="true">
@@ -338,12 +300,6 @@ export default function Home() {
       <RevealSection className="section events" id="celebration">
         <h2 className="scriptTitle">Our Wedding Celebrations</h2>
         <EventSchedule />
-      </RevealSection>
-
-      <RevealSection className="section storyIllustrations" id="our-story">
-        <FloralScatter />
-        <h2 className="scriptTitle">Our Story In Little Illustrations</h2>
-        <StoryIllustrations />
       </RevealSection>
 
       <RevealSection className="section venue" id="venue">

@@ -856,6 +856,10 @@ h1 {
   animation-delay: 0.18s;
 }
 
+.events.isVisible .eventCard:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
 .eventCard:hover,
 .eventCard:active {
   box-shadow: 0 18px 34px rgb(101 61 48 / 0.16);
@@ -864,6 +868,11 @@ h1 {
 
 .eventCard.sangeetReception {
   background: linear-gradient(135deg, #d78c72 0%, #c56067 52%, #af4f61 100%);
+  color: #fffaf4;
+}
+
+.eventCard.hathkamBadeGeet {
+  background: linear-gradient(135deg, #d99e50 0%, #bf7146 54%, #9d4d47 100%);
   color: #fffaf4;
 }
 
@@ -921,6 +930,17 @@ h1 {
   line-height: 0.98;
   margin: 0 0 16px;
   max-width: 8ch;
+}
+
+.eventTheme {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+  margin: -8px 0 15px;
+  max-width: 24ch;
+  text-transform: uppercase;
 }
 
 .eventDescription {
@@ -982,7 +1002,8 @@ h1 {
 }
 
 .eventCard.sangeetReception .eventArt img { object-position: center 54%; }
-.eventCard.wedding .eventArt img { object-position: 63% 86%; }
+.eventCard.hathkamBadeGeet .eventArt img { object-position: 51% 49%; }
+.eventCard.wedding .eventArt img { object-position: 55% 42%; }
 
 .eventOrnament {
   border: 1px solid currentColor;

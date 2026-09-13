@@ -9,13 +9,24 @@ export const COUPLE = {
 
 export const EVENTS = [
   {
+    id: "hathkam-bade-geet",
+    title: "Hathkam & Bade geet",
+    description: "A joyful morning of traditional songs and cherished family moments.",
+    dateLabel: "Tuesday, 24 November 2026",
+    timeLabel: "10:00 AM onwards",
+    image: "/art/hathkam-bade-geet.jpg",
+    alt: "Somya and Kapil together at the temple before their celebration",
+    theme: "hathkamBadeGeet",
+  },
+  {
     id: "sangeet-reception",
-    title: "Sangeet & Reception",
-    description: "An evening of music, laughter, celebration and togetherness.",
+    title: "Haldi & sangeet",
+    themeLabel: "(Mandatory theme - yellow/orange)",
+    description: "A joyful gathering filled with colour, music, laughter and togetherness.",
     dateLabel: "Wednesday, 25 November 2026",
     timeLabel: "7:00 PM onwards",
-    image: "/art/sangeet-hands.jpg",
-    alt: "Somya and Kapil holding hands before their celebration",
+    image: "/art/haldi-sangeet.jpg",
+    alt: "Somya and Kapil dancing together outdoors",
     theme: "sangeetReception",
   },
   {
@@ -24,8 +35,8 @@ export const EVENTS = [
     description: "Join us as we begin our forever surrounded by love and blessings.",
     dateLabel: "Thursday, 26 November 2026",
     timeLabel: "8:00 PM onwards",
-    image: "/art/wedding-temple-portrait.jpg",
-    alt: "Somya and Kapil together beside a temple before their wedding",
+    image: "/art/wedding-26-november.jpg",
+    alt: "Somya and Kapil embracing in a grassy field",
     theme: "wedding",
   },
 ] as const;
