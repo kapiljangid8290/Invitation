@@ -329,7 +329,7 @@ export default function Home() {
           </article>
           <article className="venueDetail">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M7 3v4M17 3v4M3 10h18M8 14h3M13 14h3" /></svg>
-            <p><span>Celebration</span>25–26 November 2026</p>
+            <p><span>Celebration</span>26 November 2026</p>
           </article>
         </div>
         <a className="directionsBtn" href={VENUE.directionsUrl} target="_blank" rel="noopener noreferrer">

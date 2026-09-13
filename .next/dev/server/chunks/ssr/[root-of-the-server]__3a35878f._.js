@@ -38,15 +38,25 @@ const EVENTS = [
         theme: "hathkamBadeGeet"
     },
     {
-        id: "sangeet-reception",
-        title: "Haldi & sangeet",
-        themeLabel: "(Mandatory theme - yellow/orange)",
-        description: "A joyful gathering filled with colour, music, laughter and togetherness.",
+        id: "haldi",
+        title: "Haldi",
+        themeLabel: "Phoolon Ki Haldi · Mandatory theme — yellow/orange",
+        description: "A vibrant morning of flowers, colour and joyful celebrations.",
+        dateLabel: "Wednesday, 25 November 2026",
+        timeLabel: "8:30 AM onwards",
+        image: "/art/kapil-somya-haldi.jpg",
+        alt: "Somya and Kapil seated together at a temple for their Haldi celebration",
+        theme: "haldi"
+    },
+    {
+        id: "sangeet",
+        title: "Sangeet",
+        description: "An evening of music, laughter and togetherness.",
         dateLabel: "Wednesday, 25 November 2026",
         timeLabel: "7:00 PM onwards",
         image: "/art/haldi-sangeet.jpg",
         alt: "Somya and Kapil dancing together outdoors",
-        theme: "sangeetReception"
+        theme: "sangeet"
     },
     {
         id: "wedding",
@@ -1102,7 +1112,7 @@ function Home() {
                                                         lineNumber: 332,
                                                         columnNumber: 16
                                                     }, this),
-                                                    "25–26 November 2026"
+                                                    "26 November 2026"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/page.tsx",
