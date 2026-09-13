@@ -1152,10 +1152,11 @@ h1 {
 }
 
 .storyArt {
+  aspect-ratio: 4 / 5;
   background: rgb(255 255 255 / 0.46);
   border: 1px solid rgb(255 255 255 / 0.78);
   border-radius: 30px 18px 34px 22px / 20px 31px 22px 34px;
-  height: 340px;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -1176,9 +1177,9 @@ h1 {
   width: 100%;
 }
 
-.storyCard.festive .storyArt img { object-position: center 34%; }
-.storyCard.wedding .storyArt img { object-position: center 38%; }
-.storyCard.forever .storyArt img { object-position: center 28%; }
+.storyCard.festive .storyArt img { object-position: center 70%; }
+.storyCard.wedding .storyArt img { object-position: center 88%; }
+.storyCard.forever .storyArt img { object-position: center 54%; }
 
 .storyCard h3 {
   color: #964f5d;

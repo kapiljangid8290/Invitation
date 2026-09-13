@@ -582,20 +582,20 @@ function EventSchedule() {
 const STORY_ILLUSTRATIONS = [
     {
         title: "Sangeet & Reception",
-        image: "/art/kapil-somya-sangeet-illustration.png",
-        alt: "Hand-painted wedding illustration of Kapil and Somya in festive Indian attire",
+        image: "/art/story-sangeet-blue.jpg",
+        alt: "Kapil and Somya dancing together, with Somya in a blue floral dress",
         theme: "festive"
     },
     {
         title: "The Wedding",
-        image: "/art/kapil-somya-wedding-illustration.png",
-        alt: "Hand-painted wedding illustration of Kapil and Somya in traditional wedding attire",
+        image: "/art/story-wedding-seated.jpg",
+        alt: "Kapil and Somya seated together on temple steps",
         theme: "wedding"
     },
     {
         title: "Forever Begins",
-        image: "/art/kapil-somya-reception-illustration.png",
-        alt: "Romantic hand-painted illustration of Kapil and Somya together",
+        image: "/art/story-forever-steps.jpg",
+        alt: "Kapil and Somya walking together down temple steps",
         theme: "forever"
     }
 ];

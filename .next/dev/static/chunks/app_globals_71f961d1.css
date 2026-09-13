@@ -1243,10 +1243,11 @@ h1 {
 }
 
 .storyArt {
+  aspect-ratio: 4 / 5;
   background: #ffffff75;
   border: 1px solid #ffffffc7;
   border-radius: 30px 18px 34px 22px / 20px 31px 22px 34px;
-  height: 340px;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -1268,15 +1269,15 @@ h1 {
 }
 
 .storyCard.festive .storyArt img {
-  object-position: center 34%;
+  object-position: center 70%;
 }
 
 .storyCard.wedding .storyArt img {
-  object-position: center 38%;
+  object-position: center 88%;
 }
 
 .storyCard.forever .storyArt img {
-  object-position: center 28%;
+  object-position: center 54%;
 }
 
 .storyCard h3 {
