@@ -312,8 +312,6 @@ export default function Home() {
       <RevealSection className="section saveDateSection" id="save-the-date">
         <FloralScatter />
         <div className="saveDateBanner">
-          <img className="saveDateFlower" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
-          <img className="saveDateFlower saveDateFlowerLower" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
           <p className="saveDateLabel">Save the Date</p>
           <h2>25 &amp; 26 November 2026</h2>
           <div className="countdownDivider" aria-hidden="true"><span /></div>

@@ -628,8 +628,11 @@ h1 {
 
 .saveDateBanner {
   background:
+    linear-gradient(rgb(255 250 241 / 0.8), rgb(255 250 241 / 0.8)),
+    url("/art/floral-border-top.png") center / cover no-repeat,
     repeating-linear-gradient(0deg, rgb(114 78 57 / 0.012) 0 1px, transparent 1px 4px),
     #fffaf1;
+  background-blend-mode: normal, multiply, normal, normal;
   border: 1px solid #bc7f8c;
   border-radius: 20px;
   box-shadow: 0 12px 28px rgb(103 74 55 / 0.09);
@@ -662,27 +665,6 @@ h1 {
   line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
-}
-
-.saveDateFlower {
-  height: 138px;
-  object-fit: cover;
-  object-position: left center;
-  opacity: 0.64;
-  pointer-events: none;
-  position: absolute;
-  right: -58px;
-  top: -48px;
-  transform: rotate(150deg);
-  width: 182px;
-}
-
-.saveDateFlowerLower {
-  bottom: -55px;
-  left: -66px;
-  right: auto;
-  top: auto;
-  transform: scaleX(-1) rotate(-15deg);
 }
 
 .countdownDivider {
