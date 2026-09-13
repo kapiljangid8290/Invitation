@@ -292,7 +292,7 @@ export default function Home() {
 
       <section className="hero">
         <img className="floralFrame" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
-        <img className="heroBotanicalMotif" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
+        <img className="ganeshaMotif" src="/art/ganesha-red-ornament.png" alt="" aria-hidden="true" />
         <p className="eyebrow">With the blessings of our families</p>
         <div className="coupleNames">
           <h1>{COUPLE.groom}</h1>

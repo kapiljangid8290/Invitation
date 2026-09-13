@@ -496,14 +496,14 @@ main {
   inset: 0;
 }
 
-.heroBotanicalMotif {
-  object-fit: cover;
-  object-position: center;
-  opacity: .78;
+.ganeshaMotif {
+  object-fit: contain;
+  opacity: .94;
   z-index: 1;
   justify-self: center;
-  width: 152px;
-  height: 54px;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 2px;
   position: relative;
 }
 
@@ -512,7 +512,7 @@ main {
   letter-spacing: .14em;
   text-transform: uppercase;
   z-index: 1;
-  margin: 0;
+  margin: 0 0 8px;
   font-family: Cormorant Garamond, serif;
   font-size: .68rem;
   font-weight: 500;
@@ -548,7 +548,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   display: flex;
   position: relative;
 }
@@ -623,11 +623,11 @@ h1 {
   position: relative;
 }
 
-.invitationOpen .heroBotanicalMotif, .invitationOpen .hero .eyebrow, .invitationOpen .hero .inviteLine, .invitationOpen .heroDate, .invitationOpen .heroLocation, .invitationOpen .hero .scrollCue {
+.invitationOpen .ganeshaMotif, .invitationOpen .hero .eyebrow, .invitationOpen .hero .inviteLine, .invitationOpen .heroDate, .invitationOpen .heroLocation, .invitationOpen .hero .scrollCue {
   animation: .9s both heroFadeUp;
 }
 
-.invitationOpen .heroBotanicalMotif {
+.invitationOpen .ganeshaMotif {
   animation-delay: 80ms;
 }
 
@@ -758,7 +758,7 @@ h1 {
 
 .countdownDivider {
   align-items: center;
-  gap: 8px;
+  gap: 3px;
   width: min(132px, 50%);
   margin: 21px 0 17px;
   display: flex;
