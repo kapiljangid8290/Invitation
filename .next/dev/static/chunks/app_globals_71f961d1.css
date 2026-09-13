@@ -1166,8 +1166,12 @@ h1 {
     object-position: center 54%;
   }
 
+  .eventCard.wedding .eventArt {
+    aspect-ratio: 2 / 3;
+  }
+
   .eventCard.wedding .eventArt img {
-    object-position: 62% 86%;
+    object-position: center;
   }
 }
 
