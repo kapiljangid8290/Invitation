@@ -37,7 +37,7 @@ export const VENUE = {
   address: "Siwanchi Bhawan (Yatrik Bhavan), Jodhpur, Rajasthan",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.032736775232!2d73.00137787487249!3d26.257033287961484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418de885b261d5%3A0xe8fc3b0eadcbc976!2sSiwanchi%20Bhawan%20(Yatrik%20bhavan)!5e1!3m2!1sen!2sin!4v1787042956699!5m2!1sen!2sin",
-  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=26.257033287961484,73.00137787487249",
+  directionsUrl: "https://maps.app.goo.gl/GMvJPsd3W2c53oVx6",
 };
 
 export const FAMILIES = {
