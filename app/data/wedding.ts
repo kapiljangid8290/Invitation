@@ -4,7 +4,7 @@ export const COUPLE = {
   weddingDate: "2026-11-26T19:30:00+05:30",
   displayDate: "26th November 2026",
   shortDate: "26 November 2026",
-  hashtag: "#KapilAndSomya",
+  hashtag: "#SomyaAndKapil",
 };
 
 export const EVENTS = [
@@ -15,7 +15,7 @@ export const EVENTS = [
     dateLabel: "Wednesday, 25 November 2026",
     timeLabel: "7:00 PM onwards",
     image: "/art/sangeet-hands.jpg",
-    alt: "Kapil and Somya holding hands before their celebration",
+    alt: "Somya and Kapil holding hands before their celebration",
     theme: "sangeetReception",
   },
   {
@@ -25,7 +25,7 @@ export const EVENTS = [
     dateLabel: "Thursday, 26 November 2026",
     timeLabel: "8:00 PM onwards",
     image: "/art/wedding-temple-portrait.jpg",
-    alt: "Kapil and Somya together beside a temple before their wedding",
+    alt: "Somya and Kapil together beside a temple before their wedding",
     theme: "wedding",
   },
 ] as const;

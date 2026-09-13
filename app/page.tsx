@@ -87,15 +87,15 @@ function EnvelopeIntro({ isOpening, onOpen }: { isOpening: boolean; onOpen: () =
       </div>
       <div className="envelopeContent">
         <p className="envelopeEyebrow">An Invitation From The Heart</p>
-        <p className="envelopeNames">Kapil &amp; Somya</p>
-        <button className="envelopeButton" type="button" onClick={onOpen} disabled={isOpening} aria-label="Open Kapil and Somya's wedding invitation">
+        <p className="envelopeNames">Somya &amp; Kapil</p>
+        <button className="envelopeButton" type="button" onClick={onOpen} disabled={isOpening} aria-label="Open Somya and Kapil's wedding invitation">
           <span className="envelope" aria-hidden="true">
             <img className="envelopeBotanical envelopeBotanicalLeft" src="/art/floral-border-top.png" alt="" />
             <img className="envelopeBotanical envelopeBotanicalRight" src="/art/floral-border-top.png" alt="" />
             <span className="envelopeLight" />
             <span className="envelopeLetter">
-              <span className="envelopeMonogram">K + S</span>
-              <span className="envelopeLetterText">Kapil &amp; Somya</span>
+              <span className="envelopeMonogram">S + K</span>
+              <span className="envelopeLetterText">Somya &amp; Kapil</span>
             </span>
             <span className="envelopeBack" />
             <span className="envelopeFlap" />
@@ -235,19 +235,19 @@ const STORY_ILLUSTRATIONS = [
   {
     title: "Sangeet & Reception",
     image: "/art/story-sangeet-blue.jpg",
-    alt: "Kapil and Somya dancing together, with Somya in a blue floral dress",
+    alt: "Somya and Kapil dancing together, with Somya in a blue floral dress",
     theme: "festive",
   },
   {
     title: "The Wedding",
     image: "/art/story-wedding-seated.jpg",
-    alt: "Kapil and Somya seated together on temple steps",
+    alt: "Somya and Kapil seated together on temple steps",
     theme: "wedding",
   },
   {
     title: "Forever Begins",
     image: "/art/story-forever-steps.jpg",
-    alt: "Kapil and Somya walking together down temple steps",
+    alt: "Somya and Kapil walking together down temple steps",
     theme: "forever",
   },
 ] as const;
@@ -304,11 +304,11 @@ export default function Home() {
         <img className="ganeshaMotif" src="/art/ganesha-red-ornament.png" alt="" aria-hidden="true" />
         <p className="eyebrow">With the blessings of our families</p>
         <div className="coupleNames">
-          <h1>{COUPLE.groom}</h1>
+          <h1>{COUPLE.bride}</h1>
           <span className="nameDivider" aria-hidden="true" />
           <p className="ampersand">&amp;</p>
           <span className="nameDivider" aria-hidden="true" />
-          <h1>{COUPLE.bride}</h1>
+          <h1>{COUPLE.groom}</h1>
         </div>
         <p className="inviteLine">are getting married</p>
         <p className="heroDate">25 &amp; 26 November 2026</p>
@@ -401,7 +401,7 @@ export default function Home() {
         <FloralScatter />
         <p className="footerEyebrow">With love</p>
         <h2>
-          {COUPLE.groom} &amp; {COUPLE.bride}
+          {COUPLE.bride} &amp; {COUPLE.groom}
         </h2>
         <p className="footerDate">{COUPLE.displayDate}</p>
         <p className="footerVenue">{VENUE.name}, Jodhpur</p>

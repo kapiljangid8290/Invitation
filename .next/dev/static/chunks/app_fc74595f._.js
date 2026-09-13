@@ -18,7 +18,7 @@ const COUPLE = {
     weddingDate: "2026-11-26T19:30:00+05:30",
     displayDate: "26th November 2026",
     shortDate: "26 November 2026",
-    hashtag: "#KapilAndSomya"
+    hashtag: "#SomyaAndKapil"
 };
 const EVENTS = [
     {
@@ -28,7 +28,7 @@ const EVENTS = [
         dateLabel: "Wednesday, 25 November 2026",
         timeLabel: "7:00 PM onwards",
         image: "/art/sangeet-hands.jpg",
-        alt: "Kapil and Somya holding hands before their celebration",
+        alt: "Somya and Kapil holding hands before their celebration",
         theme: "sangeetReception"
     },
     {
@@ -38,7 +38,7 @@ const EVENTS = [
         dateLabel: "Thursday, 26 November 2026",
         timeLabel: "8:00 PM onwards",
         image: "/art/wedding-temple-portrait.jpg",
-        alt: "Kapil and Somya together beside a temple before their wedding",
+        alt: "Somya and Kapil together beside a temple before their wedding",
         theme: "wedding"
     }
 ];
@@ -250,7 +250,7 @@ function EnvelopeIntro({ isOpening, onOpen }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "envelopeNames",
-                        children: "Kapil & Somya"
+                        children: "Somya & Kapil"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
                         lineNumber: 90,
@@ -261,7 +261,7 @@ function EnvelopeIntro({ isOpening, onOpen }) {
                         type: "button",
                         onClick: onOpen,
                         disabled: isOpening,
-                        "aria-label": "Open Kapil and Somya's wedding invitation",
+                        "aria-label": "Open Somya and Kapil's wedding invitation",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "envelope",
@@ -297,7 +297,7 @@ function EnvelopeIntro({ isOpening, onOpen }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "envelopeMonogram",
-                                                children: "K + S"
+                                                children: "S + K"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 97,
@@ -305,7 +305,7 @@ function EnvelopeIntro({ isOpening, onOpen }) {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "envelopeLetterText",
-                                                children: "Kapil & Somya"
+                                                children: "Somya & Kapil"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 98,
@@ -634,19 +634,19 @@ const STORY_ILLUSTRATIONS = [
     {
         title: "Sangeet & Reception",
         image: "/art/story-sangeet-blue.jpg",
-        alt: "Kapil and Somya dancing together, with Somya in a blue floral dress",
+        alt: "Somya and Kapil dancing together, with Somya in a blue floral dress",
         theme: "festive"
     },
     {
         title: "The Wedding",
         image: "/art/story-wedding-seated.jpg",
-        alt: "Kapil and Somya seated together on temple steps",
+        alt: "Somya and Kapil seated together on temple steps",
         theme: "wedding"
     },
     {
         title: "Forever Begins",
         image: "/art/story-forever-steps.jpg",
-        alt: "Kapil and Somya walking together down temple steps",
+        alt: "Somya and Kapil walking together down temple steps",
         theme: "forever"
     }
 ];
@@ -792,7 +792,7 @@ function Home() {
                                 className: "coupleNames",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].groom
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].bride
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 307,
@@ -823,7 +823,7 @@ function Home() {
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].bride
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].groom
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 311,
@@ -1386,9 +1386,9 @@ function Home() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: [
-                                    __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].groom,
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].bride,
                                     " & ",
-                                    __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].bride
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$wedding$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["COUPLE"].groom
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
