@@ -119,8 +119,15 @@ function MusicToggle() {
     if (!audio) return;
 
     const onError = () => setAvailable(false);
+    const syncPlaybackState = () => setPlaying(!audio.paused);
     audio.addEventListener("error", onError);
-    return () => audio.removeEventListener("error", onError);
+    audio.addEventListener("play", syncPlaybackState);
+    audio.addEventListener("pause", syncPlaybackState);
+    return () => {
+      audio.removeEventListener("error", onError);
+      audio.removeEventListener("play", syncPlaybackState);
+      audio.removeEventListener("pause", syncPlaybackState);
+    };
   }, []);
 
   const toggle = async () => {
@@ -145,7 +152,7 @@ function MusicToggle() {
 
   return (
     <>
-      <audio ref={audioRef} src="/audio/celebration.mp3" loop preload="none" />
+      <audio id="wedding-bgm" ref={audioRef} src="/audio/wedding-bgm.mp3" loop preload="auto" />
       <button
         type="button"
         className="musicToggle"
@@ -270,6 +277,8 @@ export default function Home() {
   const openInvitation = () => {
     if (isEnvelopeOpening) return;
 
+    const weddingMusic = document.getElementById("wedding-bgm") as HTMLAudioElement | null;
+    if (weddingMusic) void weddingMusic.play().catch(() => undefined);
     window.scrollTo(0, 0);
     setIsEnvelopeOpening(true);
     window.setTimeout(() => {
@@ -343,8 +352,6 @@ export default function Home() {
         <p className="venueName">Siwanchi Bhawan, Jodhpur</p>
         <p className="venueAddress">{VENUE.name} ({VENUE.subtitle})<br />{VENUE.city}</p>
         <div className="venueMapScene">
-          <img className="venueBotanical venueBotanicalLeft" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
-          <img className="venueBotanical venueBotanicalRight" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
           <div className="mapWrap">
             <iframe
               title="Siwanchi Bhawan location on Google Maps"
@@ -376,8 +383,6 @@ export default function Home() {
       </RevealSection>
 
       <RevealSection className="section familyInvitation" id="invitation">
-        <img className="familyBotanical familyBotanicalLeft" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
-        <img className="familyBotanical familyBotanicalRight" src="/art/floral-border-top.png" alt="" aria-hidden="true" />
         <h2 className="familyInvitationHeading">With Love From Our Families</h2>
         <div className="familyColumns">
           <article className="familyBlock">

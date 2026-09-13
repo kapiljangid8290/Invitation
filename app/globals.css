@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
 :root {
-  --ink: #5c4a42;
-  --pink: #d4567a;
-  --rose: #c94b72;
-  --gold: #d4a04a;
-  --gold-deep: #c4872f;
-  --cream: #fffbf4;
-  --ivory: #fff9f0;
-  --mint: #e8f2ec;
+  --ink: #594038;
+  --pink: #da4f78;
+  --rose: #cf456f;
+  --gold: #d79a3e;
+  --gold-deep: #b97928;
+  --cream: #fff8ed;
+  --ivory: #fff6e8;
+  --mint: #deefe4;
   --tan: #b8926a;
   --tan-deep: #9a7652;
   --wine: #873e56;
@@ -400,9 +400,9 @@ footer {
 .hero {
   align-content: center;
   background:
-    radial-gradient(circle at 50% 18%, rgb(255 255 255 / 0.78) 0 12%, transparent 42%),
+    radial-gradient(circle at 50% 18%, rgb(255 255 255 / 0.86) 0 12%, transparent 42%),
     repeating-linear-gradient(0deg, rgb(109 77 49 / 0.016) 0 1px, transparent 1px 4px),
-    #fbf7ef;
+    #fff6e8;
   display: grid;
   gap: 8px;
   min-height: 94svh;
@@ -619,7 +619,7 @@ h1 {
 /* ── Save the date + countdown ────────────────────── */
 
 .saveDateSection {
-  background: #f4ebdd;
+  background: linear-gradient(135deg, #f9e2cf 0%, #f7ead7 52%, #e7f0df 100%);
   isolation: isolate;
   overflow: hidden;
   padding-bottom: 96px;
@@ -809,8 +809,8 @@ h1 {
 
 .events {
   background:
-    radial-gradient(circle at 8% 20%, rgb(236 183 176 / 0.3), transparent 27%),
-    linear-gradient(180deg, #f9f0e9 0%, #f7edf0 52%, #edf3e9 100%);
+    radial-gradient(circle at 8% 20%, rgb(233 150 137 / 0.4), transparent 27%),
+    linear-gradient(180deg, #fbe1d7 0%, #f9e0e7 52%, #e5f0df 100%);
   overflow: hidden;
   padding-bottom: 96px;
   padding-top: 96px;
@@ -863,7 +863,7 @@ h1 {
 }
 
 .eventCard.sangeetReception {
-  background: linear-gradient(135deg, #c98371 0%, #b96666 52%, #a95d64 100%);
+  background: linear-gradient(135deg, #d78c72 0%, #c56067 52%, #af4f61 100%);
   color: #fffaf4;
 }
 
@@ -875,7 +875,7 @@ h1 {
 
 .eventFloralFrame {
   inset: 0;
-  opacity: 0.32;
+  opacity: 0.42;
   pointer-events: none;
   position: absolute;
   transition: transform 0.38s ease-out;
@@ -1031,10 +1031,10 @@ h1 {
 
 .storyIllustrations {
   background:
-    radial-gradient(circle at 88% 14%, rgb(241 201 184 / 0.42), transparent 26%),
-    radial-gradient(circle at 9% 76%, rgb(195 214 185 / 0.4), transparent 29%),
+    radial-gradient(circle at 88% 14%, rgb(237 174 147 / 0.5), transparent 26%),
+    radial-gradient(circle at 9% 76%, rgb(166 203 170 / 0.48), transparent 29%),
     repeating-linear-gradient(0deg, rgb(121 88 68 / 0.012) 0 1px, transparent 1px 4px),
-    #fff9ef;
+    #fff3e7;
   isolation: isolate;
   overflow: hidden;
   padding-bottom: 104px;
@@ -1175,8 +1175,11 @@ h1 {
 
 .invitationMessage {
   background:
+    linear-gradient(rgb(255 246 232 / 0.78), rgb(255 246 232 / 0.78)),
+    url("/art/floral-border-top.png") center / cover no-repeat,
     repeating-linear-gradient(0deg, rgb(109 77 49 / 0.012) 0 1px, transparent 1px 4px),
-    var(--ivory);
+    #fff3e4;
+  background-blend-mode: normal, multiply, normal, normal;
   isolation: isolate;
   min-height: 620px;
   overflow: hidden;
@@ -1250,30 +1253,6 @@ h1 {
 .familyOrnament::before { right: calc(100% + 9px); }
 .familyOrnament::after { left: calc(100% + 9px); }
 
-.invitationBotanical {
-  height: 230px;
-  object-fit: cover;
-  opacity: 0.22;
-  pointer-events: none;
-  position: absolute;
-  width: 260px;
-  z-index: -1;
-}
-
-.invitationBotanicalLeft {
-  left: -128px;
-  top: -32px;
-  transform: rotate(-12deg);
-  animation: botanicalDriftLeft 9s ease-in-out infinite;
-}
-
-.invitationBotanicalRight {
-  bottom: -36px;
-  right: -130px;
-  transform: scaleX(-1) rotate(-15deg);
-  animation: botanicalDriftRight 10s ease-in-out infinite;
-}
-
 .invitationMessage.isVisible .invitationHeading,
 .invitationMessage.isVisible .invitationParagraph,
 .invitationMessage.isVisible .familyNames {
@@ -1318,9 +1297,12 @@ h1 {
 
 .venue {
   background:
-    radial-gradient(circle at 15% 16%, rgb(244 215 161 / 0.34), transparent 23%),
-    radial-gradient(circle at 88% 72%, rgb(185 211 185 / 0.38), transparent 25%),
-    #eef4ea;
+    linear-gradient(rgb(237 246 229 / 0.74), rgb(237 246 229 / 0.74)),
+    url("/art/floral-border-top.png") center / cover no-repeat,
+    radial-gradient(circle at 15% 16%, rgb(244 194 126 / 0.45), transparent 23%),
+    radial-gradient(circle at 88% 72%, rgb(153 199 160 / 0.46), transparent 25%),
+    #e3f0df;
+  background-blend-mode: normal, multiply, normal, normal, normal;
   isolation: isolate;
   overflow: hidden;
   padding-bottom: 96px;
@@ -1355,28 +1337,6 @@ h1 {
   max-width: 1100px;
   position: relative;
   width: 100%;
-}
-
-.venueBotanical {
-  height: 160px;
-  object-fit: cover;
-  opacity: 0.36;
-  pointer-events: none;
-  position: absolute;
-  width: 210px;
-  z-index: 1;
-}
-
-.venueBotanicalLeft {
-  left: -92px;
-  top: -60px;
-  transform: rotate(-16deg);
-}
-
-.venueBotanicalRight {
-  bottom: -62px;
-  right: -94px;
-  transform: scaleX(-1) rotate(-13deg);
 }
 
 .mapWrap {
@@ -1535,9 +1495,12 @@ h1 {
 
 .familyInvitation {
   background:
-    radial-gradient(circle at 13% 16%, rgb(255 255 255 / 0.46), transparent 24%),
+    linear-gradient(rgb(231 243 232 / 0.76), rgb(231 243 232 / 0.76)),
+    url("/art/floral-border-top.png") center / cover no-repeat,
+    radial-gradient(circle at 13% 16%, rgb(255 255 255 / 0.58), transparent 24%),
     repeating-linear-gradient(0deg, rgb(70 104 82 / 0.018) 0 1px, transparent 1px 5px),
-    #e5eee8;
+    #dceee1;
+  background-blend-mode: normal, multiply, normal, normal, normal;
   isolation: isolate;
   min-height: 540px;
   overflow: hidden;
@@ -1623,28 +1586,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: 28px 28px;
   background-position: center;
-}
-
-.familyBotanical {
-  height: 235px;
-  object-fit: cover;
-  opacity: 0.16;
-  pointer-events: none;
-  position: absolute;
-  width: 260px;
-  z-index: -1;
-}
-
-.familyBotanicalLeft {
-  left: -135px;
-  top: -26px;
-  transform: rotate(-16deg);
-}
-
-.familyBotanicalRight {
-  bottom: -48px;
-  right: -138px;
-  transform: scaleX(-1) rotate(-13deg);
 }
 
 @media (min-width: 700px) {

@@ -1,13 +1,13 @@
 /* [project]/app/globals.css [app-client] (css) */
 :root {
-  --ink: #5c4a42;
-  --pink: #d4567a;
-  --rose: #c94b72;
-  --gold: #d4a04a;
-  --gold-deep: #c4872f;
-  --cream: #fffbf4;
-  --ivory: #fff9f0;
-  --mint: #e8f2ec;
+  --ink: #594038;
+  --pink: #da4f78;
+  --rose: #cf456f;
+  --gold: #d79a3e;
+  --gold-deep: #b97928;
+  --cream: #fff8ed;
+  --ivory: #fff6e8;
+  --mint: #deefe4;
   --tan: #b8926a;
   --tan-deep: #9a7652;
   --wine: #873e56;
@@ -476,7 +476,7 @@ main {
 }
 
 .hero {
-  background: radial-gradient(circle at 50% 18%, #ffffffc7 0 12%, #0000 42%), repeating-linear-gradient(0deg, #6d4d3104 0 1px, #0000 1px 4px), #fbf7ef;
+  background: radial-gradient(circle at 50% 18%, #ffffffdb 0 12%, #0000 42%), repeating-linear-gradient(0deg, #6d4d3104 0 1px, #0000 1px 4px), #fff6e8;
   align-content: center;
   gap: 8px;
   min-height: 94svh;
@@ -696,7 +696,7 @@ h1 {
 
 .saveDateSection {
   isolation: isolate;
-  background: #f4ebdd;
+  background: linear-gradient(135deg, #f9e2cf 0%, #f7ead7 52%, #e7f0df 100%);
   padding-top: 96px;
   padding-bottom: 96px;
   overflow: hidden;
@@ -896,7 +896,7 @@ h1 {
 }
 
 .events {
-  background: radial-gradient(circle at 8% 20%, #ecb7b04d, #0000 27%), linear-gradient(#f9f0e9 0%, #f7edf0 52%, #edf3e9 100%);
+  background: radial-gradient(circle at 8% 20%, #e9968966, #0000 27%), linear-gradient(#fbe1d7 0%, #f9e0e7 52%, #e5f0df 100%);
   padding-top: 96px;
   padding-bottom: 96px;
   overflow: hidden;
@@ -949,7 +949,7 @@ h1 {
 
 .eventCard.sangeetReception {
   color: #fffaf4;
-  background: linear-gradient(135deg, #c98371 0%, #b96666 52%, #a95d64 100%);
+  background: linear-gradient(135deg, #d78c72 0%, #c56067 52%, #af4f61 100%);
 }
 
 .eventCard.wedding {
@@ -959,7 +959,7 @@ h1 {
 }
 
 .eventFloralFrame {
-  opacity: .32;
+  opacity: .42;
   pointer-events: none;
   z-index: -1;
   transition: transform .38s ease-out;
@@ -1123,7 +1123,7 @@ h1 {
 
 .storyIllustrations {
   isolation: isolate;
-  background: radial-gradient(circle at 88% 14%, #f1c9b86b, #0000 26%), radial-gradient(circle at 9% 76%, #c3d6b966, #0000 29%), repeating-linear-gradient(0deg, #79584403 0 1px, #0000 1px 4px), #fff9ef;
+  background: radial-gradient(circle at 88% 14%, #edae9380, #0000 26%), radial-gradient(circle at 9% 76%, #a6cbaa7a, #0000 29%), repeating-linear-gradient(0deg, #79584403 0 1px, #0000 1px 4px), #fff3e7;
   padding-top: 100px;
   padding-bottom: 104px;
   overflow: hidden;
@@ -1273,8 +1273,9 @@ h1 {
 }
 
 .invitationMessage {
-  background: repeating-linear-gradient(0deg, #6d4d3103 0 1px, transparent 1px 4px), var(--ivory);
+  background-blend-mode: normal, multiply, normal, normal;
   isolation: isolate;
+  background: linear-gradient(#fff6e8c7, #fff6e8c7), url("/art/floral-border-top.png") center / cover no-repeat, repeating-linear-gradient(0deg, #6d4d3103 0 1px, #0000 1px 4px), #fff3e4;
   min-height: 620px;
   padding-top: 104px;
   padding-bottom: 104px;
@@ -1351,30 +1352,6 @@ h1 {
   left: calc(100% + 9px);
 }
 
-.invitationBotanical {
-  object-fit: cover;
-  opacity: .22;
-  pointer-events: none;
-  z-index: -1;
-  width: 260px;
-  height: 230px;
-  position: absolute;
-}
-
-.invitationBotanicalLeft {
-  animation: 9s ease-in-out infinite botanicalDriftLeft;
-  top: -32px;
-  left: -128px;
-  transform: rotate(-12deg);
-}
-
-.invitationBotanicalRight {
-  animation: 10s ease-in-out infinite botanicalDriftRight;
-  bottom: -36px;
-  right: -130px;
-  transform: scaleX(-1)rotate(-15deg);
-}
-
 .invitationMessage.isVisible .invitationHeading, .invitationMessage.isVisible .invitationParagraph, .invitationMessage.isVisible .familyNames {
   animation-fill-mode: both;
 }
@@ -1432,10 +1409,11 @@ h1 {
 }
 
 .venue {
+  background-blend-mode: normal, multiply, normal, normal, normal;
   isolation: isolate;
   padding-bottom: 96px;
   padding-inline: 3vw;
-  background: radial-gradient(circle at 15% 16%, #f4d7a157, #0000 23%), radial-gradient(circle at 88% 72%, #b9d3b961, #0000 25%), #eef4ea;
+  background: linear-gradient(#edf6e5bd, #edf6e5bd), url("/art/floral-border-top.png") center / cover no-repeat, radial-gradient(circle at 15% 16%, #f4c27e73, #0000 23%), radial-gradient(circle at 88% 72%, #99c7a075, #0000 25%), #e3f0df;
   padding-top: 96px;
   overflow: hidden;
 }
@@ -1467,28 +1445,6 @@ h1 {
   max-width: 1100px;
   margin: 0 auto 26px;
   position: relative;
-}
-
-.venueBotanical {
-  object-fit: cover;
-  opacity: .36;
-  pointer-events: none;
-  z-index: 1;
-  width: 210px;
-  height: 160px;
-  position: absolute;
-}
-
-.venueBotanicalLeft {
-  top: -60px;
-  left: -92px;
-  transform: rotate(-16deg);
-}
-
-.venueBotanicalRight {
-  bottom: -62px;
-  right: -94px;
-  transform: scaleX(-1)rotate(-13deg);
 }
 
 .mapWrap {
@@ -1642,8 +1598,9 @@ h1 {
 }
 
 .familyInvitation {
+  background-blend-mode: normal, multiply, normal, normal, normal;
   isolation: isolate;
-  background: radial-gradient(circle at 13% 16%, #ffffff75, #0000 24%), repeating-linear-gradient(0deg, #46685205 0 1px, #0000 1px 5px), #e5eee8;
+  background: linear-gradient(#e7f3e8c2, #e7f3e8c2), url("/art/floral-border-top.png") center / cover no-repeat, radial-gradient(circle at 13% 16%, #ffffff94, #0000 24%), repeating-linear-gradient(0deg, #46685205 0 1px, #0000 1px 5px), #dceee1;
   min-height: 540px;
   padding-top: 100px;
   padding-bottom: 104px;
@@ -1731,28 +1688,6 @@ h1 {
   background-attachment: scroll, scroll, scroll, scroll, scroll;
   background-origin: padding-box, padding-box, padding-box, padding-box, padding-box;
   background-clip: border-box, border-box, border-box, border-box, border-box;
-}
-
-.familyBotanical {
-  object-fit: cover;
-  opacity: .16;
-  pointer-events: none;
-  z-index: -1;
-  width: 260px;
-  height: 235px;
-  position: absolute;
-}
-
-.familyBotanicalLeft {
-  top: -26px;
-  left: -135px;
-  transform: rotate(-16deg);
-}
-
-.familyBotanicalRight {
-  bottom: -48px;
-  right: -138px;
-  transform: scaleX(-1)rotate(-13deg);
 }
 
 @media (min-width: 700px) {
