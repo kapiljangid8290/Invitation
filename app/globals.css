@@ -618,6 +618,145 @@ h1 {
 
 /* ── Save the date + countdown ────────────────────── */
 
+/* ── Our forever story ────────────────────────────── */
+
+.foreverStory {
+  background:
+    radial-gradient(circle at 4% 8%, rgb(218 168 143 / 0.3), transparent 28%),
+    radial-gradient(circle at 97% 87%, rgb(166 203 170 / 0.34), transparent 30%),
+    repeating-linear-gradient(0deg, rgb(121 88 68 / 0.012) 0 1px, transparent 1px 4px),
+    #fff4e8;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.foreverStoryLayout {
+  display: grid;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  z-index: 1;
+}
+
+.foreverStoryPortrait {
+  background: #fffaf2;
+  border: 1px solid rgb(185 132 100 / 0.42);
+  border-radius: 42px 24px 42px 24px;
+  box-shadow: 0 14px 32px rgb(101 61 48 / 0.12);
+  margin: 0 auto;
+  max-width: 390px;
+  overflow: hidden;
+  padding: 10px;
+  transform: rotate(-1.5deg);
+  width: 100%;
+}
+
+.foreverStoryPortrait img {
+  aspect-ratio: 4 / 5;
+  border-radius: 33px 17px 33px 17px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center 54%;
+  width: 100%;
+}
+
+.foreverStoryCopy {
+  background: rgb(255 252 246 / 0.8);
+  border: 1px solid rgb(181 124 107 / 0.3);
+  border-radius: 22px;
+  box-shadow: 0 10px 26px rgb(101 61 48 / 0.07);
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.foreverStoryEyebrow {
+  color: #9f6874;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.foreverStoryCopy h2 {
+  color: var(--wine);
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(2.8rem, 12vw, 4.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  margin: 0 auto 20px;
+  max-width: 10ch;
+}
+
+.foreverStoryQuote {
+  color: #9b5f69;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.28rem, 5.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 auto 24px;
+  max-width: 23ch;
+}
+
+.foreverStoryBody {
+  border-top: 1px solid rgb(181 124 107 / 0.28);
+  color: #654b41;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  padding-top: 22px;
+}
+
+.foreverStoryBody p {
+  margin: 0 auto 17px;
+  max-width: 58ch;
+}
+
+.foreverStoryBody p:last-child { margin-bottom: 0; }
+
+.foreverStoryMilestone {
+  color: var(--wine);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.38rem, 6vw, 1.8rem);
+  font-weight: 600;
+  margin: 26px 0 16px;
+}
+
+.foreverStoryMilestone em {
+  color: #b37543;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.32em;
+  font-weight: 400;
+}
+
+.foreverStoryClosing {
+  color: #725146;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.08rem;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 52ch;
+}
+
+.foreverStoryClosing strong {
+  color: #a24e69;
+  font-style: normal;
+}
+
+@media (min-width: 760px) {
+  .foreverStoryLayout {
+    align-items: center;
+    grid-template-columns: minmax(250px, 0.74fr) minmax(360px, 1.26fr);
+  }
+
+  .foreverStoryCopy { padding: 42px 38px; }
+}
+
 .saveDateSection {
   background: linear-gradient(135deg, #f9e2cf 0%, #f7ead7 52%, #e7f0df 100%);
   isolation: isolate;
@@ -963,6 +1102,8 @@ h1 {
 
 .eventDetails {
   border-top: 1px solid rgb(255 250 244 / 0.42);
+  display: grid;
+  gap: 10px;
   margin-top: 22px;
   padding-top: 12px;
 }

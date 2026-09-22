@@ -694,6 +694,143 @@ h1 {
   display: inline-block;
 }
 
+.foreverStory {
+  isolation: isolate;
+  background: radial-gradient(circle at 4% 8%, #daa88f4d, #0000 28%), radial-gradient(circle at 97% 87%, #a6cbaa57, #0000 30%), repeating-linear-gradient(0deg, #79584403 0 1px, #0000 1px 4px), #fff4e8;
+  overflow: hidden;
+}
+
+.foreverStoryLayout {
+  z-index: 1;
+  gap: 32px;
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+
+.foreverStoryPortrait {
+  background: #fffaf2;
+  border: 1px solid #b984646b;
+  border-radius: 42px 24px;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  transform: rotate(-1.5deg);
+  box-shadow: 0 14px 32px #653d301f;
+}
+
+.foreverStoryPortrait img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 54%;
+  border-radius: 33px 17px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.foreverStoryCopy {
+  text-align: center;
+  background: #fffcf6cc;
+  border: 1px solid #b57c6b4d;
+  border-radius: 22px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 26px #653d3012;
+}
+
+.foreverStoryEyebrow {
+  color: #9f6874;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  font-family: DM Sans, sans-serif;
+  font-size: .68rem;
+  font-weight: 700;
+}
+
+.foreverStoryCopy h2 {
+  color: var(--wine);
+  max-width: 10ch;
+  margin: 0 auto 20px;
+  font-family: Great Vibes, cursive;
+  font-size: clamp(2.8rem, 12vw, 4.2rem);
+  font-weight: 400;
+  line-height: .95;
+}
+
+.foreverStoryQuote {
+  color: #9b5f69;
+  max-width: 23ch;
+  margin: 0 auto 24px;
+  font-family: Cormorant Garamond, serif;
+  font-size: clamp(1.28rem, 5.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.foreverStoryBody {
+  color: #654b41;
+  border-top: 1px solid #b57c6b47;
+  padding-top: 22px;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.foreverStoryBody p {
+  max-width: 58ch;
+  margin: 0 auto 17px;
+}
+
+.foreverStoryBody p:last-child {
+  margin-bottom: 0;
+}
+
+.foreverStoryMilestone {
+  color: var(--wine);
+  margin: 26px 0 16px;
+  font-family: Cormorant Garamond, serif;
+  font-size: clamp(1.38rem, 6vw, 1.8rem);
+  font-weight: 600;
+}
+
+.foreverStoryMilestone em {
+  color: #b37543;
+  font-family: Great Vibes, cursive;
+  font-size: 1.32em;
+  font-weight: 400;
+}
+
+.foreverStoryClosing {
+  color: #725146;
+  max-width: 52ch;
+  margin: 0 auto;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.08rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.foreverStoryClosing strong {
+  color: #a24e69;
+  font-style: normal;
+}
+
+@media (min-width: 760px) {
+  .foreverStoryLayout {
+    grid-template-columns: minmax(250px, .74fr) minmax(360px, 1.26fr);
+    align-items: center;
+  }
+
+  .foreverStoryCopy {
+    padding: 42px 38px;
+  }
+}
+
 .saveDateSection {
   isolation: isolate;
   background: linear-gradient(135deg, #f9e2cf 0%, #f7ead7 52%, #e7f0df 100%);
@@ -1047,8 +1184,10 @@ h1 {
 
 .eventDetails {
   border-top: 1px solid #fffaf46b;
+  gap: 10px;
   margin-top: 22px;
   padding-top: 12px;
+  display: grid;
 }
 
 .eventCard.wedding .eventDetails {

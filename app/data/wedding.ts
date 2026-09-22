@@ -14,6 +14,10 @@ export const EVENTS = [
     description: "A joyful morning of traditional songs and cherished family moments.",
     dateLabel: "Tuesday, 24 November 2026",
     timeLabel: "10:00 AM onwards",
+    scheduleDetails: [
+      { label: "Moong Bikherna & Hathkam", time: "10 AM onwards" },
+      { label: "Mehndi", time: "4 PM onwards" },
+    ],
     image: "/art/hathkam-bade-geet.jpg",
     alt: "Somya and Kapil together at the temple before their celebration",
     theme: "hathkamBadeGeet",
@@ -22,7 +26,7 @@ export const EVENTS = [
     id: "haldi",
     title: "Haldi",
     themeLabel: "Phoolon Ki Haldi · Mandatory theme — yellow/orange",
-    description: "A vibrant morning of flowers, colour and joyful celebrations.",
+    description: "A playful morning of flowers, games and togetherness.",
     dateLabel: "Wednesday, 25 November 2026",
     timeLabel: "8:30 AM onwards",
     image: "/art/kapil-somya-haldi.jpg",
@@ -32,7 +36,7 @@ export const EVENTS = [
   {
     id: "sangeet",
     title: "Sangeet",
-    description: "An evening of music, laughter and togetherness.",
+    description: "An evening of music, dance, fun and laughter.",
     dateLabel: "Wednesday, 25 November 2026",
     timeLabel: "7:00 PM onwards",
     image: "/art/haldi-sangeet.jpg",
@@ -55,7 +59,7 @@ export const VENUE = {
   name: "Siwanchi Bhawan",
   subtitle: "Yatrik Bhavan",
   city: "Jodhpur, Rajasthan",
-  address: "Siwanchi Bhawan (Yatrik Bhavan), Jodhpur, Rajasthan",
+  address: "Siwanchi Bhawan (Yatrik Bhavan), 9A, Heavy Industrial Area, Near Raj Pump Road, opposite ISUZU Showroom, Heavy Industrial Area Phase II, Basni, Jodhpur, Rajasthan 342011",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.032736775232!2d73.00137787487249!3d26.257033287961484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418de885b261d5%3A0xe8fc3b0eadcbc976!2sSiwanchi%20Bhawan%20(Yatrik%20bhavan)!5e1!3m2!1sen!2sin!4v1787042956699!5m2!1sen!2sin",
   directionsUrl: "https://maps.app.goo.gl/GMvJPsd3W2c53oVx6",

@@ -219,7 +219,13 @@ function EventSchedule() {
             {"themeLabel" in event && <p className="eventTheme">{event.themeLabel}</p>}
             <p className="eventDescription">{event.description}</p>
             <div className="eventDetails">
-              <p><span>Time</span>{event.timeLabel}</p>
+              {"scheduleDetails" in event ? (
+                event.scheduleDetails.map((detail) => (
+                  <p key={detail.label}><span>{detail.label}</span>{detail.time}</p>
+                ))
+              ) : (
+                <p><span>Time</span>{event.timeLabel}</p>
+              )}
             </div>
             <div className="eventArt">
               <i className="eventOrnament" />
@@ -280,6 +286,31 @@ export default function Home() {
         </a>
       </section>
 
+      <RevealSection className="section foreverStory" id="our-story">
+        <FloralScatter />
+        <div className="foreverStoryLayout">
+          <figure className="foreverStoryPortrait">
+            <img
+              src="/art/story-forever-steps.jpg"
+              alt="Somya and Kapil walking hand in hand through a temple"
+              loading="lazy"
+            />
+          </figure>
+          <div className="foreverStoryCopy">
+            <p className="foreverStoryEyebrow">Our story</p>
+            <h2>The Story Behind Our Forever</h2>
+            <p className="foreverStoryQuote">“I prayed for a forever, and the universe gave me you.”</p>
+            <div className="foreverStoryBody">
+              <p>That&apos;s true. She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019, where it all started.</p>
+              <p>Out of nowhere, our paths crossed as strangers. There was an instant spark, but who knew two total opposites would become each other&apos;s whole world? A calm, patient soul met a stubborn heart. She was unsure to fall in love, but he proved everyday, deeply and undoubtedly, that we were meant to be.</p>
+              <p>His gentle love softened her heart, bringing calm to her storm. And in her joy and laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives could have ever taken.</p>
+            </div>
+            <p className="foreverStoryMilestone">7 years down, <em>7 vows to go!</em></p>
+            <p className="foreverStoryClosing">With full hearts and endless gratitude, we invite you to the start of our favorite chapter, <strong>#SoKapilEverAfter!</strong></p>
+          </div>
+        </div>
+      </RevealSection>
+
       <RevealSection className="section saveDateSection" id="save-the-date">
         <FloralScatter />
         <div className="saveDateBanner">
@@ -306,7 +337,7 @@ export default function Home() {
         <FloralScatter />
         <h2 className="scriptTitle">Where We Celebrate</h2>
         <p className="venueName">Siwanchi Bhawan, Jodhpur</p>
-        <p className="venueAddress">{VENUE.name} ({VENUE.subtitle})<br />{VENUE.city}</p>
+        <p className="venueAddress">{VENUE.address}</p>
         <div className="venueMapScene">
           <div className="mapWrap">
             <iframe
