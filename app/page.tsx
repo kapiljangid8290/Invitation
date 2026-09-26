@@ -289,15 +289,15 @@ export default function Home() {
       <RevealSection className="section foreverStory" id="our-story">
         <FloralScatter />
         <div className="foreverStoryLayout">
-          <figure className="foreverStoryPortrait">
+          {/* <figure className="foreverStoryPortrait">
             <img
               src="/art/story-forever-steps.jpg"
               alt="Somya and Kapil walking hand in hand through a temple"
               loading="lazy"
             />
-          </figure>
+          </figure> */}
           <div className="foreverStoryCopy">
-            <p className="foreverStoryEyebrow">Our story</p>
+            {/* <p className="foreverStoryEyebrow">Our story</p> */}
             <h2>The Story Behind Our Forever</h2>
             <p className="foreverStoryQuote">“I prayed for a forever, and the universe gave me you.”</p>
             <div className="foreverStoryBody">
@@ -305,13 +305,13 @@ export default function Home() {
               <p>Out of nowhere, our paths crossed as strangers. There was an instant spark, but who knew two total opposites would become each other&apos;s whole world? A calm, patient soul met a stubborn heart. She was unsure to fall in love, but he proved everyday, deeply and undoubtedly, that we were meant to be.</p>
               <p>His gentle love softened her heart, bringing calm to her storm. And in her joy and laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives could have ever taken.</p>
             </div>
-            <p className="foreverStoryMilestone">7 years down, <em>7 vows to go!</em></p>
+            <p className="foreverStoryMilestone"><em>7 years down, 7 vows to go!</em></p>
             <p className="foreverStoryClosing">With full hearts and endless gratitude, we invite you to the start of our favorite chapter, <strong>#SoKapilEverAfter!</strong></p>
           </div>
         </div>
       </RevealSection>
 
-      <RevealSection className="section saveDateSection" id="save-the-date">
+      {/* <RevealSection className="section saveDateSection" id="save-the-date">
         <FloralScatter />
         <div className="saveDateBanner">
           <p className="saveDateLabel">Save the Date</p>
@@ -326,7 +326,7 @@ export default function Home() {
           </div>
           <Countdown />
         </div>
-      </RevealSection>
+      </RevealSection> */}
 
       <RevealSection className="section events" id="celebration">
         <h2 className="scriptTitle">Our Wedding Celebrations</h2>
@@ -392,7 +392,10 @@ export default function Home() {
         </h2>
         <p className="footerDate">{COUPLE.displayDate}</p>
         <p className="footerVenue">{VENUE.name}, Jodhpur</p>
-        {COUPLE.hashtag ? <p className="hashtag">{COUPLE.hashtag}</p> : null}
+        <div className="footerCountdown">
+          <p>Counting down to our day</p>
+          <Countdown />
+        </div>
       </footer>
       </main>
     </>

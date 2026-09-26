@@ -1886,11 +1886,40 @@ footer h2 {
   opacity: 0.88;
 }
 
-.hashtag {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  margin-top: 14px;
-  opacity: 0.82;
+.footerCountdown {
+  margin: 28px auto 0;
+  max-width: 410px;
+  position: relative;
+  z-index: 1;
+}
+
+.footerCountdown > p {
+  color: rgb(255 248 239 / 0.9);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  margin: 0 0 14px;
+}
+
+.footerCountdown .countdown {
+  gap: 8px;
+}
+
+.footerCountdown .countdownUnit {
+  background: rgb(255 250 243 / 0.16);
+  border-color: rgb(255 250 243 / 0.56);
+  box-shadow: none;
+  min-width: 0;
+}
+
+.footerCountdown .countdownValue,
+.footerCountdown .countdownUnit span,
+.footerCountdown .celebrationState {
+  color: #fff8ef;
+}
+
+.footerCountdown .celebrationState {
+  margin: 0;
 }
 
 /* ── Floral scatter decorations ───────────────────── */

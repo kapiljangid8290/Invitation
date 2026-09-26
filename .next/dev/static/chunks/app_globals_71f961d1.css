@@ -1989,11 +1989,38 @@ footer h2 {
   font-size: .85rem;
 }
 
-.hashtag {
-  letter-spacing: .08em;
-  opacity: .82;
-  margin-top: 14px;
-  font-size: .78rem;
+.footerCountdown {
+  z-index: 1;
+  max-width: 410px;
+  margin: 28px auto 0;
+  position: relative;
+}
+
+.footerCountdown > p {
+  color: #fff8efe6;
+  margin: 0 0 14px;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.footerCountdown .countdown {
+  gap: 8px;
+}
+
+.footerCountdown .countdownUnit {
+  box-shadow: none;
+  background: #fffaf329;
+  border-color: #fffaf38f;
+  min-width: 0;
+}
+
+.footerCountdown .countdownValue, .footerCountdown .countdownUnit span, .footerCountdown .celebrationState {
+  color: #fff8ef;
+}
+
+.footerCountdown .celebrationState {
+  margin: 0;
 }
 
 .floralScatter {
