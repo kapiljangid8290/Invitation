@@ -301,9 +301,8 @@ export default function Home() {
             <h2>How we come so far</h2>
             <p className="foreverStoryQuote">“I prayed for a forever, and the universe gave me you.”</p>
             <div className="foreverStoryBody">
-              <p>She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019.</p>
-              <p>Our paths crossed out of nowhere, and two total opposites (a calm, giving soul and a stubborn heart) became each other's whole world. She was unsure about falling in love, but every single day he proved, deeply and undoubtedly, that we were meant to be.</p>
-              <p>His gentle love melted her heart and brought calm to her storm, and in her laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives ever took.</p>
+              <p>Long before we knew it, 2019 quietly rewrote our story.</p>
+              <p>Two opposites (a calm, giving soul and a stubborn heart) crossed paths, and his gentle love brought calm to her storm while in her laughter, he found his home.</p>
             </div>
             <p className="foreverStoryMilestone">and now, <em>7 years down,</em>We are ready for<em> 7 vows to go!</em></p>
             <p className="foreverStoryClosing">Today, with full hearts and endless gratitude, we invite you to fulfil our favourite chapter,<strong>#SoMadeForKapil!</strong></p>
