@@ -23,8 +23,8 @@ const COUPLE = {
 const EVENTS = [
     {
         id: "hathkam-bade-geet",
-        title: "Hathkam & Bade geet",
-        description: "A joyful morning of traditional songs and cherished family moments.",
+        title: "Moong Bikherna & Hathkam",
+        description: "A joyful morning of rituals and a begining of forever.",
         dateLabel: "Tuesday, 24 November 2026",
         timeLabel: "10:00 AM onwards",
         scheduleDetails: [
@@ -874,7 +874,7 @@ function Home() {
                                     className: "foreverStoryCopy",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            children: "The Story Behind Our Forever"
+                                            children: "How we come so far"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 301,
@@ -892,21 +892,21 @@ function Home() {
                                             className: "foreverStoryBody",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "That's true. She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019, where it all started."
+                                                    children: "She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 304,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "Out of nowhere, our paths crossed as strangers. There was an instant spark, but who knew two total opposites would become each other's whole world? A calm, patient soul met a stubborn heart. She was unsure to fall in love, but he proved everyday, deeply and undoubtedly, that we were meant to be."
+                                                    children: "Our paths crossed out of nowhere, and two total opposites (a calm, giving soul and a stubborn heart) became each other's whole world. She was unsure about falling in love, but every single day he proved, deeply and undoubtedly, that we were meant to be."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 305,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "His gentle love softened her heart, bringing calm to her storm. And in her joy and laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives could have ever taken."
+                                                    children: "His gentle love melted her heart and brought calm to her storm, and in her laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives ever took."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 306,
@@ -920,14 +920,25 @@ function Home() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "foreverStoryMilestone",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                                children: "7 years down, 7 vows to go!"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 308,
-                                                columnNumber: 50
-                                            }, this)
-                                        }, void 0, false, {
+                                            children: [
+                                                "and now, ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                                    children: "7 years down,"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 308,
+                                                    columnNumber: 59
+                                                }, this),
+                                                "We are ready for",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                                    children: " 7 vows to go!"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 308,
+                                                    columnNumber: 97
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 308,
                                             columnNumber: 13
@@ -935,13 +946,13 @@ function Home() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "foreverStoryClosing",
                                             children: [
-                                                "With full hearts and endless gratitude, we invite you to the start of our favorite chapter, ",
+                                                "Today, with full hearts and endless gratitude, we invite you to fulfil our favourite chapter,",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "#SoKapilEverAfter!"
+                                                    children: "#SoMadeForKapil!"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 309,
-                                                    columnNumber: 140
+                                                    columnNumber: 141
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -972,7 +983,7 @@ function Home() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "scriptTitle",
-                                children: "Our Wedding Celebrations"
+                                children: "How and When we are Celebrating"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
                                 lineNumber: 332,

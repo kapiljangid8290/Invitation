@@ -10,8 +10,8 @@ export const COUPLE = {
 export const EVENTS = [
   {
     id: "hathkam-bade-geet",
-    title: "Hathkam & Bade geet",
-    description: "A joyful morning of traditional songs and cherished family moments.",
+    title: "Moong Bikherna & Hathkam",
+    description: "A joyful morning of rituals and a begining of forever.",
     dateLabel: "Tuesday, 24 November 2026",
     timeLabel: "10:00 AM onwards",
     scheduleDetails: [

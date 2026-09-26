@@ -298,15 +298,15 @@ export default function Home() {
           </figure> */}
           <div className="foreverStoryCopy">
             {/* <p className="foreverStoryEyebrow">Our story</p> */}
-            <h2>The Story Behind Our Forever</h2>
+            <h2>How we come so far</h2>
             <p className="foreverStoryQuote">“I prayed for a forever, and the universe gave me you.”</p>
             <div className="foreverStoryBody">
-              <p>That&apos;s true. She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019, where it all started.</p>
-              <p>Out of nowhere, our paths crossed as strangers. There was an instant spark, but who knew two total opposites would become each other&apos;s whole world? A calm, patient soul met a stubborn heart. She was unsure to fall in love, but he proved everyday, deeply and undoubtedly, that we were meant to be.</p>
-              <p>His gentle love softened her heart, bringing calm to her storm. And in her joy and laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives could have ever taken.</p>
+              <p>She prayed quietly for a love to last a lifetime, unaware her forever was already waiting back in 2019.</p>
+              <p>Our paths crossed out of nowhere, and two total opposites (a calm, giving soul and a stubborn heart) became each other's whole world. She was unsure about falling in love, but every single day he proved, deeply and undoubtedly, that we were meant to be.</p>
+              <p>His gentle love melted her heart and brought calm to her storm, and in her laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives ever took.</p>
             </div>
-            <p className="foreverStoryMilestone"><em>7 years down, 7 vows to go!</em></p>
-            <p className="foreverStoryClosing">With full hearts and endless gratitude, we invite you to the start of our favorite chapter, <strong>#SoKapilEverAfter!</strong></p>
+            <p className="foreverStoryMilestone">and now, <em>7 years down,</em>We are ready for<em> 7 vows to go!</em></p>
+            <p className="foreverStoryClosing">Today, with full hearts and endless gratitude, we invite you to fulfil our favourite chapter,<strong>#SoMadeForKapil!</strong></p>
           </div>
         </div>
       </RevealSection>
@@ -329,7 +329,7 @@ export default function Home() {
       </RevealSection> */}
 
       <RevealSection className="section events" id="celebration">
-        <h2 className="scriptTitle">Our Wedding Celebrations</h2>
+        <h2 className="scriptTitle">How and When we are Celebrating</h2>
         <EventSchedule />
       </RevealSection>
 

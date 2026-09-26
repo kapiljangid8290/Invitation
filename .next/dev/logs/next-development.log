@@ -1,66 +1,12 @@
-[00:00:23.829] Server  LOG     ✓ Ready in 16.6s
-[00:00:29.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:31.641] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         data-scribe-recorder-ready="true"
-                        >
-                  ...
-
-[00:03:07.376] Server  LOG     ✓ Compiled in 772ms
-[00:04:02.803] Server  LOG     ✓ Compiled in 284ms
-[00:04:02.905] Browser ERROR   ./app/page.tsx:308:86
-Parsing ecmascript source code failed
-  306 |               <p>His gentle love softened her heart, bringing calm to her storm. And in her joy and laughter, he found his home. Looking back, crossing paths that day was the single best turn our lives could have ever taken.</p>
-  307 |             </div>
-> 308 |             <p className="foreverStoryMilestone">7 years down, 7 vows to go!</em></p>
-      |                                                                                      ^
-> 309 |             <p className="foreverStoryClosing">With full hearts and endless gratitude, we invite you to the start of our favorite chapter, <strong>#SoKapilEverAfter!</strong></p>
-      | ^^^^^^^^^^^^^
-  310 |           </div>
-  311 |         </div>
-  312 |       </RevealSection>
-
-Expected '</', got 'jsx text'
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:05.809] Server  LOG     ✓ Compiled in 225ms
-[00:04:12.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:09.696] Server  LOG     ✓ Compiled in 62ms
-[00:07:31.009] Server  LOG     ✓ Compiled in 46ms
-[00:07:33.985] Server  LOG     ✓ Compiled in 494ms
-[00:08:38.618] Server  LOG     ✓ Compiled in 44ms
+[00:00:08.716] Server  LOG     ✓ Ready in 7.2s
+[00:00:11.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:14.790] Server  LOG     ✓ Compiled in 43ms
+[00:01:18.744] Server  LOG     ✓ Compiled in 53ms
+[00:02:38.007] Server  LOG     ✓ Compiled in 23ms
+[00:02:44.429] Server  LOG     ✓ Compiled in 7ms
+[00:03:14.159] Server  LOG     ✓ Compiled in 23ms
+[00:03:19.544] Server  LOG     ✓ Compiled in 30ms
+[00:03:22.630] Server  LOG     ✓ Compiled in 20ms
+[00:03:25.531] Server  LOG     ✓ Compiled in 18ms
+[00:03:26.730] Server  LOG     ✓ Compiled in 11ms
+[00:03:28.179] Server  LOG     ✓ Compiled in 20ms
