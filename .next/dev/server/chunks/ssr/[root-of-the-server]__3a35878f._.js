@@ -43,8 +43,8 @@ const EVENTS = [
                 time: "4 PM onwards"
             }
         ],
-        image: "/art/hathkam-bade-geet.jpg",
-        alt: "Somya and Kapil together at the temple before their celebration",
+        image: "/art/hathkam-hands.jpg",
+        alt: "Somya and Kapil holding hands with Mehndi and festive yellow bangles",
         theme: "hathkamBadeGeet"
     },
     {
