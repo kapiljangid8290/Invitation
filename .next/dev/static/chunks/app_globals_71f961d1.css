@@ -1092,9 +1092,19 @@ h1 {
   box-shadow: 0 18px 34px #653d3029;
 }
 
-.eventCard.sangeet {
+.eventCard.sangeet, .eventCard.haldiSangeet {
   color: #fffaf4;
   background: linear-gradient(135deg, #d78c72 0%, #c56067 52%, #af4f61 100%);
+}
+
+.eventCard.haldiSangeet h3 {
+  max-width: 9ch;
+  font-size: clamp(2.4rem, 9.5vw, 3.2rem);
+}
+
+.eventCard.haldiSangeet .eventTheme, .eventCard.sangeet .eventTheme {
+  color: #ffe7b3;
+  text-shadow: 0 1px 2px #0000002e;
 }
 
 .eventCard.haldi {
@@ -1238,7 +1248,7 @@ h1 {
   height: 100%;
 }
 
-.eventCard.sangeet .eventArt img {
+.eventCard.sangeet .eventArt img, .eventCard.haldiSangeet .eventArt img {
   object-position: center 54%;
 }
 
@@ -1265,7 +1275,7 @@ h1 {
   right: 4px;
 }
 
-.eventCard.sangeet .eventOrnament:before, .eventCard.sangeet .eventOrnament:after {
+.eventCard.sangeet .eventOrnament:before, .eventCard.sangeet .eventOrnament:after, .eventCard.haldiSangeet .eventOrnament:before, .eventCard.haldiSangeet .eventOrnament:after {
   content: "";
   border: 1px solid;
   border-radius: 50%;
@@ -1275,11 +1285,11 @@ h1 {
   top: 42px;
 }
 
-.eventCard.sangeet .eventOrnament:before {
+.eventCard.sangeet .eventOrnament:before, .eventCard.haldiSangeet .eventOrnament:before {
   left: -11px;
 }
 
-.eventCard.sangeet .eventOrnament:after {
+.eventCard.sangeet .eventOrnament:after, .eventCard.haldiSangeet .eventOrnament:after {
   right: -11px;
 }
 
@@ -1319,12 +1329,17 @@ h1 {
     background: linear-gradient(135deg, #fff0a8 0%, #f8c95a 100%);
   }
 
-  .eventCard.sangeet {
+  .eventCard.sangeet, .eventCard.haldiSangeet {
     background: linear-gradient(135deg, #f8d0c5 0%, #eaa293 100%);
   }
 
-  .eventCard.hathkamBadeGeet, .eventCard.haldi, .eventCard.sangeet, .eventCard.wedding {
+  .eventCard.hathkamBadeGeet, .eventCard.haldi, .eventCard.sangeet, .eventCard.haldiSangeet, .eventCard.wedding {
     color: #6d5344;
+  }
+
+  .eventCard.haldiSangeet .eventTheme, .eventCard.sangeet .eventTheme {
+    color: #923a25;
+    text-shadow: none;
   }
 
   .eventDate, .eventTheme, .eventDescription, .eventDetails p {

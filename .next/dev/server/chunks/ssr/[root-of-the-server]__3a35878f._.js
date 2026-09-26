@@ -48,25 +48,25 @@ const EVENTS = [
         theme: "hathkamBadeGeet"
     },
     {
-        id: "haldi",
-        title: "Haldi",
+        id: "haldi-sangeet",
+        title: "Haldi & Sangeet",
         themeLabel: "Phoolon Ki Haldi · Mandatory theme — yellow/orange",
-        description: "A playful morning of flowers, games and togetherness.",
+        description: "A playful morning of flowers and togetherness, followed by an evening of music, dance and celebrations.",
         dateLabel: "Wednesday, 25 November 2026",
-        timeLabel: "8:30 AM onwards",
-        image: "/art/kapil-somya-haldi.jpg",
-        alt: "Somya and Kapil seated together at a temple for their Haldi celebration",
-        theme: "haldi"
-    },
-    {
-        id: "sangeet",
-        title: "Sangeet",
-        description: "An evening of music, dance, fun and laughter.",
-        dateLabel: "Wednesday, 25 November 2026",
-        timeLabel: "7:00 PM onwards",
+        timeLabel: "8:30 AM & 7:00 PM",
+        scheduleDetails: [
+            {
+                label: "Haldi",
+                time: "8:30 AM onwards"
+            },
+            {
+                label: "Sangeet",
+                time: "7:00 PM onwards"
+            }
+        ],
         image: "/art/haldi-sangeet.jpg",
-        alt: "Somya and Kapil dancing together outdoors",
-        theme: "sangeet"
+        alt: "Somya and Kapil dancing together outdoors celebrating Haldi and Sangeet",
+        theme: "haldiSangeet"
     },
     {
         id: "wedding",

@@ -100,7 +100,7 @@ Generated project artwork:
 
 - Bride and groom full names.
 - Couple names: **Kapil and Somya**.
-- Confirmed schedule: Sangeet on **25 November 2026 at 7:00 PM**; Wedding and Reception on **26 November 2026 from 7:30 PM**.
+- Confirmed schedule: Moong Bikherna & Hathkam on **24 November 2026** (10:00 AM onwards); Haldi & Sangeet on **25 November 2026** (Haldi: 8:30 AM onwards, Sangeet: 7:00 PM onwards); Wedding on **26 November 2026 from 8:00 PM onwards**.
 - Venue: **Siwanchi Bhawan (Yatrik Bhavan), Jodhpur, Rajasthan** — map embed and directions added.
 - Event list, each date, time, venue, and address.
 - Parent/family names and desired invitation wording.

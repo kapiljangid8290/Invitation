@@ -1009,9 +1009,21 @@ h1 {
   transform: translateY(-5px);
 }
 
-.eventCard.sangeet {
+.eventCard.sangeet,
+.eventCard.haldiSangeet {
   background: linear-gradient(135deg, #d78c72 0%, #c56067 52%, #af4f61 100%);
   color: #fffaf4;
+}
+
+.eventCard.haldiSangeet h3 {
+  font-size: clamp(2.4rem, 9.5vw, 3.2rem);
+  max-width: 9ch;
+}
+
+.eventCard.haldiSangeet .eventTheme,
+.eventCard.sangeet .eventTheme {
+  color: #ffe7b3;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.18);
 }
 
 .eventCard.haldi {
@@ -1156,7 +1168,8 @@ h1 {
   width: 100%;
 }
 
-.eventCard.sangeet .eventArt img { object-position: center 54%; }
+.eventCard.sangeet .eventArt img,
+.eventCard.haldiSangeet .eventArt img { object-position: center 54%; }
 .eventCard.haldi .eventArt img { object-position: center 76%; }
 .eventCard.hathkamBadeGeet .eventArt img { object-position: 51% 49%; }
 .eventCard.wedding .eventArt img { object-position: 55% 42%; }
@@ -1173,7 +1186,9 @@ h1 {
 }
 
 .eventCard.sangeet .eventOrnament::before,
-.eventCard.sangeet .eventOrnament::after {
+.eventCard.sangeet .eventOrnament::after,
+.eventCard.haldiSangeet .eventOrnament::before,
+.eventCard.haldiSangeet .eventOrnament::after {
   border: 1px solid currentColor;
   border-radius: 50%;
   content: "";
@@ -1183,8 +1198,10 @@ h1 {
   width: 20px;
 }
 
-.eventCard.sangeet .eventOrnament::before { left: -11px; }
-.eventCard.sangeet .eventOrnament::after { right: -11px; }
+.eventCard.sangeet .eventOrnament::before,
+.eventCard.haldiSangeet .eventOrnament::before { left: -11px; }
+.eventCard.sangeet .eventOrnament::after,
+.eventCard.haldiSangeet .eventOrnament::after { right: -11px; }
 
 .eventCard.wedding .eventOrnament {
   border-color: #b08742;
@@ -1223,15 +1240,23 @@ h1 {
     background: linear-gradient(135deg, #fff0a8 0%, #f8c95a 100%);
   }
 
-  .eventCard.sangeet {
+  .eventCard.sangeet,
+  .eventCard.haldiSangeet {
     background: linear-gradient(135deg, #f8d0c5 0%, #eaa293 100%);
   }
 
   .eventCard.hathkamBadeGeet,
   .eventCard.haldi,
   .eventCard.sangeet,
+  .eventCard.haldiSangeet,
   .eventCard.wedding {
     color: #6d5344;
+  }
+
+  .eventCard.haldiSangeet .eventTheme,
+  .eventCard.sangeet .eventTheme {
+    color: #923a25;
+    text-shadow: none;
   }
 
   .eventDate,
