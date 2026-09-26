@@ -304,7 +304,7 @@ export default function Home() {
               <p>Long before we knew it, 2019 quietly rewrote our story.</p>
               <p>Two opposites (a calm, giving soul and a stubborn heart) crossed paths, and his gentle love brought calm to her storm while in her laughter, he found his home.</p>
             </div>
-            <p className="foreverStoryMilestone">and now, <em>7 years down,</em>We are ready for<em> 7 vows to go!</em></p>
+            <p className="foreverStoryMilestone"> <em>7 years down,</em><em> 7 vows to go!</em></p>
             <p className="foreverStoryClosing">Today, with full hearts and endless gratitude, we invite you to fulfil our favourite chapter,<strong>#SoMadeForKapil!</strong></p>
           </div>
         </div>
