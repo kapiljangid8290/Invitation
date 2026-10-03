@@ -152,7 +152,7 @@ function MusicToggle() {
 
   return (
     <>
-      <audio id="wedding-bgm" ref={audioRef} src="/audio/wedding-bgm.mp3" loop preload="auto" />
+      <audio id="wedding-bgm" ref={audioRef} src="/audio/gujarish.mp3" loop preload="auto" />
       <button
         type="button"
         className="musicToggle"

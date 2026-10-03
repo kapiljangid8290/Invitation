@@ -51,7 +51,7 @@ const EVENTS = [
         id: "haldi-sangeet",
         title: "Haldi & Sangeet",
         themeLabel: "Phoolon Ki Haldi · Mandatory theme — yellow/orange",
-        description: "A playful morning of flowers and togetherness, followed by an evening of music, dance and celebrations.",
+        description: "",
         dateLabel: "Wednesday, 25 November 2026",
         timeLabel: "8:30 AM & 7:00 PM",
         scheduleDetails: [
@@ -60,7 +60,7 @@ const EVENTS = [
                 time: "8:30 AM onwards"
             },
             {
-                label: "Sangeet",
+                label: "Sangeet Night",
                 time: "7:00 PM onwards"
             }
         ],
@@ -422,7 +422,7 @@ function MusicToggle() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("audio", {
                 id: "wedding-bgm",
                 ref: audioRef,
-                src: "/audio/wedding-bgm.mp3",
+                src: "/audio/gujarish.mp3",
                 loop: true,
                 preload: "auto"
             }, void 0, false, {
@@ -862,21 +862,20 @@ function Home() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "foreverStoryMilestone",
                                             children: [
-                                                "and now, ",
+                                                " ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                                     children: "7 years down,"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 307,
-                                                    columnNumber: 59
+                                                    columnNumber: 51
                                                 }, this),
-                                                "We are ready for",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                                     children: " 7 vows to go!"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 307,
-                                                    columnNumber: 97
+                                                    columnNumber: 73
                                                 }, this)
                                             ]
                                         }, void 0, true, {
