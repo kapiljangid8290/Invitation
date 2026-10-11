@@ -24,7 +24,7 @@ const EVENTS = [
     {
         id: "hathkam-bade-geet",
         title: "Moong Bikherna & Hathkam",
-        description: "A joyful morning of rituals and a begining of forever.",
+        description: "A joyful morning of rituals and a beginning of forever.",
         dateLabel: "Tuesday, 24 November 2026",
         timeLabel: "10:00 AM onwards",
         scheduleDetails: [
@@ -79,7 +79,7 @@ const VENUE = {
     city: "Jodhpur, Rajasthan",
     address: "Siwanchi Bhawan (Yatrik Bhavan), 9A, Heavy Industrial Area, Near Raj Pump Road, opposite ISUZU Showroom, Heavy Industrial Area Phase II, Basni, Jodhpur, Rajasthan 342011",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.032736775232!2d73.00137787487249!3d26.257033287961484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418de885b261d5%3A0xe8fc3b0eadcbc976!2sSiwanchi%20Bhawan%20(Yatrik%20bhavan)!5e1!3m2!1sen!2sin!4v1787042956699!5m2!1sen!2sin",
-    directionsUrl: "https://maps.app.goo.gl/GMvJPsd3W2c53oVx6"
+    directionsUrl: "https://maps.google.com/?cid=16788358445161761142&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en&gl=IN&source=embed"
 };
 const FAMILIES = {
     groomSide: "Mr. & Mrs. [Groom Family Name]",
